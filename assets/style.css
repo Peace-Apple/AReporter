@@ -1,12 +1,25 @@
 header {
-    width: 100%;
-    background-color: ghostwhite;
-    position: absolute;
+  width: 100%;
+  z-index: 100;
+  background-color: ghostwhite;
+  position: absolute;
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+}
+.nav-links ul {
+
 }
 
 footer {
-    position: absolute;
-    width: 100%;
-    margin-top: 600px;
-    background-color: grey;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  margin-top: 600px;
+  background-color: grey;
 }

@@ -4,20 +4,20 @@
     <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-    <nav>
         <header>
-            <div>
-                <ul>
-                    <li><a href="#">A-Reporter<a></li>
-                    <li><a href="#">Accidents<a></li>
-                    <li><a href="#">Report Accident<a></li>
-                    <li><a href="#">Login<a></li>
-                    <li><a href="#">Signup<a></li>
-                    <li><a href="#">Logout<a></li>
-                </ul>
-            </div>
+            <nav class="fixed-nav">
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#">A-Reporter<a></li>
+                        <li><a href="#">Accidents<a></li>
+                        <li><a href="#">Report Accident<a></li>
+                        <li><a href="#">Login<a></li>
+                        <li><a href="#">Signup<a></li>
+                        <li><a href="#">Logout<a></li>
+                    </ul>
+                </div>
+            </nav>
         </header>
-    </nav>
     <div>
         <form action="submit.php" method="post">
             First Name: <br>
