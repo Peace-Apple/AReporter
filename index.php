@@ -42,28 +42,28 @@
         <footer>
             <div class="flex-parent-ft">
                 <div class="flex-child-ft item1">
+                    <h4>Contact us</h4>
                     <ul>
-                        <li>Contact us</li>
                         <li>0800-800 800</li>
-                        <li>0800-800 800</li>
-                        <li>0800-800 800</li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
 
                     </ul>
                 </div>
                 <div class="flex-child-ft item2">
+                    <h4>Legal</h4>
                     <ul>
-                        <li>Legal</li>
                         <li>Terms of use</li>
-                        <li>FAQs</li>
+                        <li>Privacy policy</li>
                         <li>FAQs</li>
                     </ul>
                 </div>
                 <div class="flex-child-ft item3"> 
+                    <h4>Quick links</h4>
                     <ul>
-                        <li>Quick links</li>
                         <li>About us</li>
-                        <li>About us</li>
-                        <li>About us</li>
+                        <li>Contact us</li>
+                        <li>Report Incident</li>
                     </ul>
                 </div>
             </div>
