@@ -56,7 +56,7 @@ footer {
   /* flex-shrink: 0; */
 }
 footer .flex-parent-ft{
-  padding: 60px 0 40px 0;
+  padding: 60px 500px 30px 500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
