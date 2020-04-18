@@ -52,7 +52,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 250px;
+  height: 300px;
   /* flex-shrink: 0; */
 }
 footer .flex-parent-ft{
