@@ -44,26 +44,26 @@
                 <div class="flex-child-ft item1">
                     <h4>Contact us</h4>
                     <ul>
-                        <li>0800-800 800</li>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
+                        <li><a>0800-800 800</a></li>
+                        <li><a>Facebook</a></li>
+                        <li><a>Twitter</a></li>
 
                     </ul>
                 </div>
                 <div class="flex-child-ft item2">
                     <h4>Legal</h4>
                     <ul>
-                        <li>Terms of use</li>
-                        <li>Privacy policy</li>
-                        <li>FAQs</li>
+                        <li><a>Terms of use</a></li>
+                        <li><a>rivacy policy</a></li>
+                        <li><a>FAQs</a></li>
                     </ul>
                 </div>
                 <div class="flex-child-ft item3"> 
                     <h4>Quick links</h4>
                     <ul>
-                        <li>About us</li>
-                        <li>Contact us</li>
-                        <li>Report Incident</li>
+                        <li><a>About us</a></li>
+                        <li><a>Contact us</a></li>
+                        <li><a>Report Incident</a></li>
                     </ul>
                 </div>
             </div>
