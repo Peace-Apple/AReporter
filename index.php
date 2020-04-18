@@ -54,7 +54,7 @@
                     <h4>Legal</h4>
                     <ul>
                         <li><a>Terms of use</a></li>
-                        <li><a>rivacy policy</a></li>
+                        <li><a>Privacy policy</a></li>
                         <li><a>FAQs</a></li>
                     </ul>
                 </div>
