@@ -62,8 +62,13 @@ footer .flex-parent-ft{
   justify-content: space-between;
   align-items: flex-start;
 }
+footer .flex-parent-ft .flex-child-ft ul {
+  list-style: none;
+  padding-left: 0;
+}
 .copyright {
   text-align: center;
 }
+
 
 
