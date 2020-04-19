@@ -6,6 +6,7 @@ body {
   background-size: cover;
   margin-top: 80px;
   /* padding: 30px 100px; */
+  font-family: sans-serif;
 }
 .content-wrap {
   min-height: 100%;
@@ -29,17 +30,21 @@ header {
   align-items: center;
   box-shadow: 0 0 25px 0 black;
   width: 100%;
+  font-family: Satisfy, sans-serif;
+  font-weight: bold;
 }
 header *{
   display: inline;
 }
 .header-title {
   margin-right: 850px;
-  margin-left: 150px;
+  margin-left: 200px;
+  font-size: 20px;
+  font-style: italic;
 }
 .header-title a {
   text-decoration: none;
-  color: black;
+  color: maroon;
 }
 .fixed-nav ul li {
   margin: 15px;
@@ -47,6 +52,12 @@ header *{
 .fixed-nav ul li a {
   text-decoration: none;
   color: black;
+}
+.fixed-nav ul li a:hover{
+  color: maroon;
+}
+.fixed-nav ul li a:active{
+  color: maroon;
 }
 footer {
   color: white;
@@ -60,7 +71,7 @@ footer {
   clear: both;
 }
 footer .flex-parent-ft{
-  padding: 50px 500px 10px 400px;
+  padding: 50px 600px 10px 500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,9 +82,30 @@ footer .flex-parent-ft .flex-child-ft ul {
   list-style: none;
   padding-left: 0;
 }
+footer .flex-parent-ft .flex-child-ft ul li a:hover{
+  color: maroon;
+  cursor: pointer;
+}
+footer .flex-parent-ft .flex-child-ft h4 {
+  color: black;
+}
 .copyright {
   text-align: center;
+  font-style: italic;
 }
-
-
-
+.report-form h2{
+  color: white;
+}
+.cases {
+  color: white;
+}
+.report-form {
+  background-color: white;
+  width: 1100px;
+  height: 1000px;
+  margin: 100px 250px;
+  padding: 100px 100px;
+}
+.form label {
+  padding: 20px 0px;  
+}
