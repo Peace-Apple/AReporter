@@ -1,4 +1,7 @@
-<div>
+<head>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+<div class="login">
     <h2>Login</h2>
     <form action="checklogin.php" method="post">
         <label for="username">Username</label> <br>
