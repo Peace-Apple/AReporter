@@ -33,7 +33,7 @@
     }
     else
     {
-        Print '<script>alert("Incorrect Username!");</script>'; //Prompts the user
-        Print '<script>window.location.assign("login.php");</script>'; // redirects to login.php
+        Print '<script>alert("Incorrect Username!");</script>';
+        Print '<script>window.location.assign("index.php");</script>'; 
     }
 ?>
