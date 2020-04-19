@@ -4,8 +4,8 @@
     <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-    <div class="page-container">
         <div  class="content-wrap">
+            <div class="main">
             <header>
                 <nav class="fixed-nav">
                     <div class="header-title">
@@ -39,6 +39,7 @@
                 </form>
             </div> -->
         </div>
+        </div>
         <footer>
             <div class="flex-parent-ft">
                 <div class="flex-child-ft item1">
@@ -71,6 +72,5 @@
                 <p>© <?= date('Y')?> All Rights Reserved.</p>
             </div>
         </footer>
-    </div>
 </body>
 </html>
