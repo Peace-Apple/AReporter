@@ -17,8 +17,10 @@
         $conn->close();
     }
 ?>
-
-<div>
+<head>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+<div class="register">
     <h2>Register</h2>
     <form action="register.php" method="post">
         <label for="username">Username</label> <br>
