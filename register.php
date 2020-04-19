@@ -37,4 +37,4 @@
     </form>
 </div>
 
-<a href="index.php">Back to home</a>
+<a href="index.php">Login</a>
