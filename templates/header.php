@@ -10,10 +10,10 @@
         <header>
             <nav class="fixed-nav">
                 <div class="header-title">
-                <p><a href="#">A-Reporter<a></p>
+                <h2><a href="home.php">A-Reporter<a></h2>
                 </div>
                 <ul>
-                    <li><a href="cases.php">Accidents<a></li>
+                    <li><a href="cases.php">Incidents<a></li>
                     <li><a href="report.php">Report Accident<a></li>
                     <li><a href="logout.php">Logout<a></li>
                 </ul>
