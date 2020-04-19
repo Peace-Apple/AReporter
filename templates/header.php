@@ -15,8 +15,6 @@
                 <ul>
                     <li><a href="cases.php">Accidents<a></li>
                     <li><a href="report.php">Report Accident<a></li>
-                    <li><a href="login.php">Login<a></li>
-                    <li><a href="register.php">Signup<a></li>
                     <li><a href="logout.php">Logout<a></li>
                 </ul>
             </nav>
