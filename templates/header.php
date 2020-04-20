@@ -3,6 +3,18 @@
 <head>
     <title>AReporter</title>
     <link rel="stylesheet" href="assets/style.css" />
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            background: url('../images/back.jpeg');
+            background-size: cover;
+            margin-top: 80px;
+            /* padding: 30px 100px; */
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 <body>
     <div  class="content-wrap">
