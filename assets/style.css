@@ -1,13 +1,3 @@
-html, body {
-  height: 100%;
-}
-body {
-  background: url('images/back.jpeg');
-  background-size: cover;
-  margin-top: 80px;
-  /* padding: 30px 100px; */
-  font-family: sans-serif;
-}
 .content-wrap {
   min-height: 100%;
 }
@@ -109,3 +99,46 @@ footer .flex-parent-ft .flex-child-ft h4 {
 .form label {
   padding: 20px 0px;  
 }
+.auth-forms {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  padding: 50px;
+  margin: 150px 0px 0px 1200px;
+  border: 2px solid maroon;
+  font-family: sans-serif;
+}
+.auth-forms h2 {
+  text-align: center;
+  font-size: 30px;
+  color: maroon;
+  font-weight: bolder;
+}
+.auth-forms input {
+  width: 100%;
+  padding: 20px 20px;
+  border: 1px solid maroon;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.auth-forms input[type="submit"] {
+  background-color: blueviolet;
+  color: white;
+  margin-top: 10px;
+}
+.auth-forms p {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.auth-forms p a {
+  text-decoration: none;
+  color: black;
+}
+.auth-forms p a:hover{
+  color: maroon;
+}
+/* .auth-forms .signup {
+  height: 1500px;
+} */
