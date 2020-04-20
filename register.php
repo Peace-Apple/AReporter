@@ -19,28 +19,25 @@
 ?>
 <head>
     <link rel="stylesheet" href="assets/style.css" />
-    <style>
-        body { 
-            background: url('images/mag.jpeg');
-        }
-    </style>
 </head>
-<div class="auth-forms">
-    <div class="signup">
-        <h2>Register</h2>
-        <form action="register.php" method="post">
-            <input type="text" name="username" id="username" placeholder="Enter Username" required="required" />
-            <br><br>
-            <input type="text" name="email" id="email" placeholder="Enter Email" required="required" />
-            <br><br>
-            <input type="number" name="contact" id="contact" placeholder="Enter Contact" required="required" />
-            <br><br>
-            <input type="password" name="password" id="password" placeholder="Enter password" required="required" />
-            <br><br>
-            <input type="password" name="password" id="password" placeholder="Confirm password" required="required" />
-            <br><br>
-            <input type="submit" name="submit" value="Signup"/>
-        </form>
-        <p><a href="index.php">Have an account? Login</a></p>
+<body class="auth">
+    <div class="auth-forms">
+        <div class="signup">
+            <h2>Register</h2>
+            <form action="register.php" method="post">
+                <input type="text" name="username" id="username" placeholder="Enter Username" required="required" />
+                <br><br>
+                <input type="text" name="email" id="email" placeholder="Enter Email" required="required" />
+                <br><br>
+                <input type="number" name="contact" id="contact" placeholder="Enter Contact" required="required" />
+                <br><br>
+                <input type="password" name="password" id="password" placeholder="Enter Password" required="required" />
+                <br><br>
+                <input type="password" name="password" id="password" placeholder="Confirm Password" required="required" />
+                <br><br>
+                <input type="submit" name="submit" value="Signup"/>
+            </form>
+            <p><a href="index.php">Have an account? Login</a></p>
+        </div>
     </div>
-</div>
+</body>
