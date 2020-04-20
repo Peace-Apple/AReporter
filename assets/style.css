@@ -1,3 +1,14 @@
+.mainbody {
+  background: url('images/back.jpeg');
+  background-size: cover;
+  margin-top: 80px;
+  /* padding: 30px 100px; */
+  font-family: sans-serif;
+}
+.auth {
+  background: url('images/amb2.jpeg');
+  background-size: cover;
+}
 .content-wrap {
   min-height: 100%;
 }
@@ -101,12 +112,17 @@ footer .flex-parent-ft .flex-child-ft h4 {
 }
 .auth-forms {
   width: 400px;
-  height: 400px;
   background-color: white;
   padding: 50px;
   margin: 150px 0px 0px 1200px;
   border: 2px solid maroon;
   font-family: sans-serif;
+}
+.login {
+  height: 350px;
+}
+.signup {
+  height: 580px;
 }
 .auth-forms h2 {
   text-align: center;
@@ -121,6 +137,7 @@ footer .flex-parent-ft .flex-child-ft h4 {
   border-radius: 25px;
   font-size: 15px;
   font-weight: bold;
+  background-color: whitesmoke;
 }
 .auth-forms input[type="submit"] {
   background-color: blueviolet;
@@ -139,6 +156,3 @@ footer .flex-parent-ft .flex-child-ft h4 {
 .auth-forms p a:hover{
   color: maroon;
 }
-/* .auth-forms .signup {
-  height: 1500px;
-} */
