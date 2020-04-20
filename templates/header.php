@@ -7,16 +7,9 @@
         html, body {
             height: 100%;
         }
-        body {
-            background: url('../images/back.jpeg');
-            background-size: cover;
-            margin-top: 80px;
-            /* padding: 30px 100px; */
-            font-family: sans-serif;
-        }
     </style>
 </head>
-<body>
+<body class="mainbody">
     <div  class="content-wrap">
         <div class="main">
         <header>
