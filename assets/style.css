@@ -1,5 +1,5 @@
 .mainbody {
-  background: url('images/back.jpeg');
+  /* background: url('images/back.jpeg'); */
   background-size: cover;
   margin-top: 80px;
   /* padding: 30px 100px; */
@@ -94,21 +94,77 @@ footer .flex-parent-ft .flex-child-ft h4 {
   text-align: center;
   font-style: italic;
 }
-.report-form h2{
-  color: white;
-}
 .cases {
   color: white;
 }
 .report-form {
-  background-color: white;
+  background-color: whitesmoke;
   width: 1100px;
-  height: 1000px;
-  margin: 100px 250px;
-  padding: 100px 100px;
+  height: 1360px;
+  margin: 80px 350px 0px 350px;
+  border: 1px solid silver;
+  border-radius: 5px;
 }
-.form label {
-  padding: 20px 0px;  
+.report-form h2{
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+  color: maroon;
+  font-weight: bolder;
+}
+.form {
+  border: 1px solid silver;
+  width: 700px;
+  height: 1190px;
+  margin: 0px 150px;
+  padding: 20px 50px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 black;
+}
+.form input[type="text"]{
+  width: 97%;
+  padding: 10px 10px;
+  margin-top: 3px;
+}
+.form input[type="number"]{
+  width: 43%;
+  padding: 10px 10px;
+  margin-top: 3px;
+}
+.form input[type="date"]{
+  width: 43%;
+  padding: 10px 10px;
+  margin-top: 3px;
+  margin-right: 45px;
+}
+.form input[type="time"]{
+  width: 43%;
+  padding: 10px 10px;
+  margin-top: 3px;
+}
+.form input[type="submit"]{
+  width: 30%;
+  padding: 10px 10px;
+  margin: 0px 230px;
+  border-radius: 10px;
+  background-color: blueviolet;
+  color: white;
+  border: 1px solid maroon;
+  font-weight: bold;
+  font-size: 15px;
+}
+.form input[type="radio"]{
+  margin-top: 6px;
+}
+.form textarea {
+  width: 99%;
+  height: 110px;
+  margin-top: 3px;
+}
+.form span {
+  color: red;
+  font-weight: bold;
 }
 .auth-forms {
   width: 400px;
@@ -138,11 +194,13 @@ footer .flex-parent-ft .flex-child-ft h4 {
   font-size: 15px;
   font-weight: bold;
   background-color: whitesmoke;
+  outline: none;
 }
 .auth-forms input[type="submit"] {
   background-color: blueviolet;
   color: white;
   margin-top: 10px;
+  cursor: pointer;
 }
 .auth-forms p {
   text-align: center;
