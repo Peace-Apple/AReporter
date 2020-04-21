@@ -26,14 +26,15 @@
         
 
         $sql = "INSERT INTO `incidents` 
-            (`victimname`, `victimaddress`, `reportername`, `reportercontact`, `location`, `date`, `time`, `description`, `witness`, `injury`, `treatment`, `police`, `certify`)
+            (`victimname`, `victimaddress`,`victimsex`, `reportername`, `reportercontact`, `location`, `date`, `time`, `description`, `witness`, `injury`, `treatment`, `police`, `certify`)
             VALUES 
-            ('$victimname', '$victimaddress', '$reportername', '$reportercontact', '$location', '$date', '$time', '$description', '$witness', '$injury', '$treatment', '$police', '$certify')";
+            ('$victimname', '$victimaddress','$victimsex', '$reportername', '$reportercontact', '$location', '$date', '$time', '$description', '$witness', '$injury', '$treatment', '$police', '$certify')";
 
         if($conn->query($sql) === TRUE){
             Print '<script>alert("New incident reported successfully");</script>';
         } else {
             echo "Error: ". $sql ."<br>". $conn->error;
+            Print '<script>alert("Something went wrong, please try again");</script>';
         }
         $conn->close();
         Print '<script>window.location.assign("cases.php");</script>';
@@ -52,7 +53,7 @@
             <label for="victimaddress">Address of victim<span>*</span></label><br>
             <input type="text" name="victimaddress" id="victimaddress" required="required" />
             <br><br>
-            <label for="victimsex">Sex of victim<span>*</span></label><br><br>
+            <label for="victimsex">Gender of victim<span>*</span></label><br><br>
             <input type="radio" name="victimsex" id="victimsex" value="Male" required="required" />Male
             <input type="radio" name="victimsex" id="victimsex" value="Female" required="required" />Female
             <br><br>
