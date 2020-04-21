@@ -109,8 +109,25 @@ footer .flex-parent-ft .flex-child-ft h4 {
   color: maroon;
   font-weight: bolder;
 }
-.cases-display {
-  
+.incident-table {
+  border: 1px solid silver;
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  margin: 0px 150px;
+  padding: 20px 20px;
+}
+.incident-table tr {
+  padding: 3px;
+}
+.title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+}
+.sub-title {
+  font-weight: bold;
+  font-style: italic;
 }
 .no-cases {
   color: black;
