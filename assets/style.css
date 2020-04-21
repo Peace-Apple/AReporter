@@ -133,7 +133,7 @@ footer .flex-parent-ft .flex-child-ft h4 {
 }
 .no-cases button:hover {
   background-color: wheat;
-  color: black
+  color: black;
 }
 .report-form {
   background-color: whitesmoke;
@@ -158,7 +158,7 @@ footer .flex-parent-ft .flex-child-ft h4 {
   padding: 20px 50px;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0 0 5px 0 black;
+  box-shadow: 0 0 5px 0 gray;
 }
 .form input[type="text"]{
   width: 97%;
@@ -192,6 +192,7 @@ footer .flex-parent-ft .flex-child-ft h4 {
   border: 1px solid maroon;
   font-weight: bold;
   font-size: 15px;
+  outline: none;
 }
 .form input[type="submit"]:hover{
   background-color: wheat;
@@ -199,6 +200,7 @@ footer .flex-parent-ft .flex-child-ft h4 {
 }
 .form input[type="radio"]{
   margin-top: 6px;
+  color: black;
 }
 .form textarea {
   width: 99%;
