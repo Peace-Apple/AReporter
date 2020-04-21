@@ -24,7 +24,7 @@
                     <ul>
                         <li><a>About us</a></li>
                         <li><a>Contact us</a></li>
-                        <li><a>Report Incident</a></li>
+                        <li><a href="report.php">Report Incident</a></li>
                     </ul>
                 </div>
             </div>
