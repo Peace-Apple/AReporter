@@ -95,7 +95,45 @@ footer .flex-parent-ft .flex-child-ft h4 {
   font-style: italic;
 }
 .cases {
+  background-color: whitesmoke;
+  width: 1100px;
+  height: 1360px;
+  margin: 80px 350px 0px 350px;
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+.cases h2 {
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+  color: maroon;
+  font-weight: bolder;
+}
+.cases-display {
+  
+}
+.no-cases {
+  color: black;
+  margin: 500px 350px;
+  font-size: 20px;
+  font-weight: bolder;
+  font-style: italic;
+}
+.no-cases button {
+  border: 2px solid maroon;
+  padding: 15px 30px;
+  background-color: blueviolet;
+  border-radius: 25px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
   color: white;
+  outline: none;
+  margin-left: 20px;
+}
+.no-cases button:hover {
+  background-color: wheat;
+  color: black
 }
 .report-form {
   background-color: whitesmoke;
@@ -154,6 +192,10 @@ footer .flex-parent-ft .flex-child-ft h4 {
   border: 1px solid maroon;
   font-weight: bold;
   font-size: 15px;
+}
+.form input[type="submit"]:hover{
+  background-color: wheat;
+  color: black;
 }
 .form input[type="radio"]{
   margin-top: 6px;
