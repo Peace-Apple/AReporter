@@ -10,6 +10,13 @@
 ?>
 
 <div class="cases">
-    <h2>No reported accidents yet...</h2>
+    <h2>REPORTED ACCIDENTS</h2>
+    <div class="cases-display">
+        <p class="no-cases">
+            No reported accidents at the moment...
+            Report an accident:
+            <a href="report.php"><button>Report</button></a>
+        </p>
+    </div>
 </div>
 <?php include "templates/footer.php"; ?>
