@@ -15,7 +15,7 @@
         <p class="no-cases">
             No reported accidents at the moment...
             Report an accident:
-            <a href="report.php"><button>Report</button></a>
+            <a href="report.php"><button>Report Now</button></a>
         </p>
     </div>
 </div>
