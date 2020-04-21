@@ -13,6 +13,7 @@
             Print '<script>alert("Your account has been created successfully, please login");</script>';
         } else {
             echo "Error: ". $sql ."<br>". $conn->error;
+            Print '<script>alert("Something went wrong, please try again");</script>';
         }
         $conn->close();
         Print '<script>window.location.assign("index.php");</script>';
