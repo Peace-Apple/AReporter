@@ -10,8 +10,12 @@
    $user = $_SESSION['user']; //assigns user value
 ?>
     <main>
-        <p>
-            There are no reported accidents at the moment...
-        </p>
+        <div class="home-page">
+            <p class="one">Welcome to A-Reporter!</p>
+            <p class="two">Witnessed an accident? Report today!</p>
+            <p class="three">Reach out now!</p>
+            <p class="four">Let us know today</p>
+            <p class="five">Help save lives!</p>
+        </div>
     </main>
 <?php include "templates/footer.php"; ?>
