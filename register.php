@@ -10,11 +10,12 @@
 
 
         if($conn->query($sql) === TRUE){
-            echo "New record created successfully";
+            Print '<script>alert("Your account has been created successfully, please login");</script>';
         } else {
             echo "Error: ". $sql ."<br>". $conn->error;
         }
         $conn->close();
+        Print '<script>window.location.assign("index.php");</script>';
     }
 ?>
 <head>

@@ -204,8 +204,9 @@ footer .flex-parent-ft .flex-child-ft h4 {
 }
 .form textarea {
   width: 99%;
-  height: 110px;
+  height: 100px;
   margin-top: 3px;
+  padding: 3px 3px;
 }
 .form span {
   color: red;

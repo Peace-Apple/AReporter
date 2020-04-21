@@ -31,11 +31,12 @@
             ('$victimname', '$victimaddress', '$reportername', '$reportercontact', '$location', '$date', '$time', '$description', '$witness', '$injury', '$treatment', '$police', '$certify')";
 
         if($conn->query($sql) === TRUE){
-            echo "New incident reported successfully";
+            Print '<script>alert("New incident reported successfully");</script>';
         } else {
             echo "Error: ". $sql ."<br>". $conn->error;
         }
         $conn->close();
+        Print '<script>window.location.assign("cases.php");</script>';
     }
 
 ?>
@@ -52,8 +53,8 @@
             <input type="text" name="victimaddress" id="victimaddress" required="required" />
             <br><br>
             <label for="victimsex">Sex of victim<span>*</span></label><br><br>
-            <input type="radio" name="victimsex" id="victimsex" value="Male" />Male
-            <input type="radio" name="victimsex" id="victimsex" value="Female" />Female
+            <input type="radio" name="victimsex" id="victimsex" value="Male" required="required" />Male
+            <input type="radio" name="victimsex" id="victimsex" value="Female" required="required" />Female
             <br><br>
             <h3>REPORTER DETAILS</h3>
             <label for="reportername">Name of Reporter<span>*</span></label> <br>
@@ -73,20 +74,20 @@
             <textarea name="description" id="description" placeholder="Enter text here..."></textarea>
             <br><br>
             <label for="witness">Were there any witnesses?<span>*</span></label><br>
-            <input type="radio" name="witness" id="witness" value="Yes" />Yes
-            <input type="radio" name="witness" id="witness" value="No" />No
+            <input type="radio" name="witness" id="witness" value="Yes" required="required" />Yes
+            <input type="radio" name="witness" id="witness" value="No" required="required" />No
             <br><br>
             <label for="injury">Was the individual injured?<span>*</span></label><br>
-            <input type="radio" name="injury" id="injury" value="Yes" />Yes
-            <input type="radio" name="injury" id="injury" value="No"/>No
+            <input type="radio" name="injury" id="injury" value="Yes" required="required" />Yes
+            <input type="radio" name="injury" id="injury" value="No" required="required" />No
             <br><br>
             <label for="treatment">Was medical treatment provided?<span>*</span></label><br>
-            <input type="radio" name="treatment" id="treatment" value="Yes" />Yes
-            <input type="radio" name="treatment" id="treatment" value="No"/>No
+            <input type="radio" name="treatment" id="treatment" value="Yes" required="required" />Yes
+            <input type="radio" name="treatment" id="treatment" value="No" required="required" />No
             <br><br>
             <label for="police">Do you want the police to get in touch with you?<span>*</span></label><br>
-            <input type="radio" name="police" id="police" value="Yes" />Yes
-            <input type="radio" name="police" id="police" value="No"/>No
+            <input type="radio" name="police" id="police" value="Yes" required="required" />Yes
+            <input type="radio" name="police" id="police" value="No" required="required" />No
             <br><br>
             <input type="checkbox" name="certify" id="certify" required="required" />
             <b>I certify that the above information is true and correct<span>*</span></b>
