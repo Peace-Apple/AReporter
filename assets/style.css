@@ -147,7 +147,8 @@ footer .flex-parent-ft .flex-child-ft h4 {
   width: 30%;
   padding: 10px 10px;
   margin: 0px 230px;
-  border-radius: 10px;
+  border-radius: 25px;
+  cursor: pointer;
   background-color: blueviolet;
   color: white;
   border: 1px solid maroon;
