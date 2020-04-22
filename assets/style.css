@@ -152,6 +152,8 @@ footer .flex-parent-ft .flex-child-ft h4 {
   background-color: white;
   margin: 0px 150px;
   padding: 20px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 gray;
 }
 .incident-table tr {
   padding: 3px;
