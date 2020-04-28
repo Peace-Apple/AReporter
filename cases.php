@@ -17,6 +17,14 @@
     <div class="cases-display">
         
         <?php
+             // Find out how many items are in the table
+            $total = $dbh->query('
+                SELECT
+                COUNT(*)
+                FROM
+                table
+            ')->fetchColumn();
+
             if ($result = $conn->query($sql)) {
 
                 if( mysqli_num_rows( $result )==0 ){
