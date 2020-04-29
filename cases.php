@@ -13,6 +13,7 @@
 ?>
 
 <div class="cases">
+
     <h2>REPORTED ACCIDENTS</h2>
     <div class="cases-display">
         
