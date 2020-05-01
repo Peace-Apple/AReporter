@@ -221,22 +221,26 @@ footer .flex-parent-ft .flex-child-ft h4 {
   width: 97%;
   padding: 10px 10px;
   margin-top: 3px;
+  outline-color: blueviolet;
 }
 .form input[type="number"]{
   width: 43%;
   padding: 10px 10px;
   margin-top: 3px;
+  outline-color: blueviolet;
 }
 .form input[type="date"]{
   width: 43%;
   padding: 10px 10px;
   margin-top: 3px;
   margin-right: 45px;
+  outline-color: blueviolet;
 }
 .form input[type="time"]{
   width: 43%;
   padding: 10px 10px;
   margin-top: 3px;
+  outline-color: blueviolet;
 }
 .form input[type="submit"]{
   width: 30%;
@@ -258,12 +262,14 @@ footer .flex-parent-ft .flex-child-ft h4 {
 .form input[type="radio"]{
   margin-top: 6px;
   color: black;
+  outline-color: blueviolet;
 }
 .form textarea {
   width: 99%;
   height: 100px;
   margin-top: 3px;
   padding: 3px 3px;
+  outline-color: blueviolet;
 }
 .form span {
   color: red;
