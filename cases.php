@@ -8,7 +8,18 @@
        header("location:index.php");
     }
 
-    $sql = "SELECT * FROM `incidents`";
+    $record_per_page = 3;
+    $page = '';
+
+    if (isset($_GET['page'])){
+        $page = $_GET['page'];
+    } else {
+        $page = 1;
+    }
+
+    $start_from = ($page - 1) * $record_per_page;
+
+    $sql = "SELECT * FROM `incidents` order by id DESC LIMIT $start_from, $record_per_page";
 
 ?>
 
