@@ -139,9 +139,11 @@
                 $total_records = mysqli_num_rows($page_result);
                 $total_pages = ceil($total_records/$records_per_page);
 
+                echo '<button class="prev-button">Prev</button>';
                 for ($page=1; $page <= $total_pages; $page++) { 
-                    echo '<a href="cases.php?page=' . $page . '">' . $page . '</a> ';
+                    echo '<a href="cases.php?page=' . $page . '"><button class="page_no">' . $page . '</button></a> ';
                 }
+                echo '<button class="next-button">Next</button>';
 
                 $conn->close();
             ?>
