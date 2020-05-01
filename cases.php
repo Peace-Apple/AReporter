@@ -102,7 +102,7 @@
                                 echo "<td>" . $time. "</td>";
                             echo "</tr>";
                             echo "<tr>";
-                                echo "<td>" ."Date and time of incident: ". "</td>";
+                                echo "<td>" ."Description of incident: ". "</td>";
                             echo "</tr>";
                             echo "<tr>";
                                 echo "<td>" . $description . "</td>";
