@@ -8,7 +8,7 @@
        header("location:index.php");
     }
 
-    $record_per_page = 2;
+    $records_per_page = 2;
     $page = '';
 
     if (isset($_GET['page'])){
@@ -17,9 +17,9 @@
         $page = 1;
     }
 
-    $start_from = ($page - 1) * $record_per_page;
+    $start_from = ($page - 1) * $records_per_page;
 
-    $sql = "SELECT * FROM `incidents` order by id DESC LIMIT $start_from, $record_per_page";
+    $sql = "SELECT * FROM `incidents` order by id DESC LIMIT $start_from, $records_per_page";
 
 ?>
 
@@ -137,10 +137,10 @@
                 $page_query = "SELECT * FROM `incidents` order by id DESC";
                 $page_result = $conn->query($page_query);
                 $total_records = mysqli_num_rows($page_result);
-                $total_pages = ceil($total_records/$record_per_page);
+                $total_pages = ceil($total_records/$records_per_page);
 
-                for ($i=1; $i <= $total_pages; $i++) { 
-                    echo '<a href="cases.php?page='.$i.'">'.$i.'</a>';
+                for ($page=1; $page <= $total_pages; $page++) { 
+                    echo '<a href="cases.php?page=' . $page . '">' . $page . '</a> ';
                 }
 
                 $conn->close();
