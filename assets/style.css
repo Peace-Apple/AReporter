@@ -318,11 +318,43 @@ footer .flex-parent-ft .flex-child-ft h4 {
   color: maroon;
 }
 .page_links {
-  margin: 30px 400px;
-  background-color: white;
-  border: 1px solid silver;
-  position: absolute;
-  width: 300px;
-  height: 50px;
+  margin: 20px 0px 0px 720px;
+  width: 210px;
+  height: 80px;
   padding: 10px 10px;
+}
+.page_no {
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  background-color: blueviolet;
+  border: 1px solid maroon;
+  color: white;
+  font-size: 15px;
+}
+.page_links .prev-button {
+  font-weight: bold;
+  background-color: blueviolet;
+  border: 1px solid maroon;
+  color: white;
+  font-size: 15px;
+  margin-right: 5px;
+  height: 30px;
+}
+.page_links .next-button {
+  font-weight: bold;
+  background-color: blueviolet;
+  border: 1px solid maroon;
+  color: white;
+  font-size: 15px;
+  height: 30px;
+}
+.page_links button:hover {
+  background-color: wheat;
+  color: black;
+}
+.page_links button{
+  border-radius: 5px;
+  padding: 5px 6px;
+  outline: none;
 }
