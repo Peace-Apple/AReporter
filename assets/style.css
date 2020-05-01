@@ -362,4 +362,5 @@ footer .flex-parent-ft .flex-child-ft h4 {
   border-radius: 5px;
   padding: 5px 6px;
   outline: none;
+  cursor: pointer;
 }
