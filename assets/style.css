@@ -269,6 +269,7 @@ footer .flex-parent-ft .flex-child-ft h4 {
   margin-top: 3px;
   padding: 3px 3px;
   outline-color: blueviolet;
+  resize: none;
 }
 .form span {
   color: red;
