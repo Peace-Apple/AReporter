@@ -2,9 +2,10 @@
   background: url('images/mag.jpeg');
   background-size: cover;
   margin-top: 80px;
-  /* padding: 30px 100px; */
   font-family: sans-serif;
 }
+
+/* Style auth forms */
 .auth {
   background: url('images/amb2.jpeg');
   background-size: cover;
@@ -16,6 +17,61 @@
   font-weight: bold;
   font-style: italic;
 }
+.auth-forms {
+  width: 400px;
+  background-color: white;
+  padding: 50px;
+  margin: 50px 0px 0px 1200px;
+  border: 2px solid maroon;
+  font-family: sans-serif;
+}
+.login {
+  height: 350px;
+}
+.signup {
+  height: 580px;
+}
+.auth-forms h2 {
+  text-align: center;
+  font-size: 30px;
+  color: maroon;
+  font-weight: bolder;
+}
+.auth-forms input {
+  width: 100%;
+  padding: 20px 20px;
+  border: 1px solid maroon;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: whitesmoke;
+  outline: none;
+}
+.auth-forms input[type="submit"] {
+  background-color: blueviolet;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.auth-forms input[type="submit"]:hover {
+  background-color: wheat;
+  color: black;
+}
+.auth-forms p {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.auth-forms p a {
+  text-decoration: none;
+  color: black;
+}
+.auth-forms p a:hover{
+  color: maroon;
+}
+
+/* Style home page */
 .content-wrap {
   min-height: 100%;
 }
@@ -131,6 +187,8 @@ footer .flex-parent-ft .flex-child-ft h4 {
   font-style: italic;
   font-weight: bold;
 }
+
+/* Style incidents page */
 .cases {
   background-color: whitesmoke;
   width: 1100px;
@@ -192,6 +250,8 @@ footer .flex-parent-ft .flex-child-ft h4 {
   background-color: wheat;
   color: black;
 }
+
+/* Style report form */
 .report-form {
   background-color: whitesmoke;
   width: 1100px;
@@ -264,16 +324,18 @@ footer .flex-parent-ft .flex-child-ft h4 {
   position: fixed;
   width: 0;
 }
+
 /* Customize radio buttons */
 .radio-but {
   margin: 12px 0px 13px 0px;
 }
 .radio-but label {
-  /* display: inline-block; */
   background-color: #ddd;
-  padding: 5px 10px;
+  padding: 4px 8px;
   border: 1px solid maroon;
   border-radius: 4px;
+  margin-right: 5px;
+  font-size: 14px;
 }
 .radio-but label:hover {
   background-color: #dfd;
@@ -298,59 +360,8 @@ footer .flex-parent-ft .flex-child-ft h4 {
   color: red;
   font-weight: bold;
 }
-.auth-forms {
-  width: 400px;
-  background-color: white;
-  padding: 50px;
-  margin: 50px 0px 0px 1200px;
-  border: 2px solid maroon;
-  font-family: sans-serif;
-}
-.login {
-  height: 350px;
-}
-.signup {
-  height: 580px;
-}
-.auth-forms h2 {
-  text-align: center;
-  font-size: 30px;
-  color: maroon;
-  font-weight: bolder;
-}
-.auth-forms input {
-  width: 100%;
-  padding: 20px 20px;
-  border: 1px solid maroon;
-  border-radius: 25px;
-  font-size: 15px;
-  font-weight: bold;
-  background-color: whitesmoke;
-  outline: none;
-}
-.auth-forms input[type="submit"] {
-  background-color: blueviolet;
-  color: white;
-  margin-top: 10px;
-  cursor: pointer;
-  font-size: 17px;
-}
-.auth-forms input[type="submit"]:hover {
-  background-color: wheat;
-  color: black;
-}
-.auth-forms p {
-  text-align: center;
-  margin-top: 40px;
-  font-weight: bold;
-}
-.auth-forms p a {
-  text-decoration: none;
-  color: black;
-}
-.auth-forms p a:hover{
-  color: maroon;
-}
+
+/* Pagination style */
 .page_links {
   margin: 20px 0px 0px 720px;
   width: 210px;
