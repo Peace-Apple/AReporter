@@ -84,7 +84,6 @@
                 <input type="radio" name="witness" id="witness" value="No" required="required" />
                 <label for="no">No</label>
             </div>
-            <br>
             <label for="injury">Was the individual injured?<span>*</span></label>
             <div class="radio-but">
                 <input type="radio" name="injury" id="injury" value="Yes" required="required" />
@@ -92,7 +91,6 @@
                 <input type="radio" name="injury" id="injury" value="No" required="required" />
                 <label for="no">No</label>
             </div>
-            <br>
             <label for="treatment">Was medical treatment provided?<span>*</span></label>
             <div class="radio-but">
                 <input type="radio" name="treatment" id="treatment" value="Yes" required="required" />
@@ -100,7 +98,6 @@
                 <input type="radio" name="treatment" id="treatment" value="No" required="required" />
                 <label for="no">No</label>
             </div>
-            <br>
             <label for="police">Do you want the police to get in touch with you?<span>*</span></label>
             <div class="radio-but">
                 <input type="radio" name="police" id="police" value="Yes" required="required" />
@@ -108,7 +105,6 @@
                 <input type="radio" name="police" id="police" value="No" required="required" />
                 <label for="yes">No</label>
             </div>
-            <br>
             <input type="checkbox" name="certify" id="certify" required="required" />
             <b>I certify that the above information is true and correct<span>*</span></b>
             <br><br>
