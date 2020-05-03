@@ -266,7 +266,7 @@ footer .flex-parent-ft .flex-child-ft h4 {
 }
 /* Customize radio buttons */
 .radio-but {
-  margin-top: 12px;
+  margin: 12px 0px 13px 0px;
 }
 .radio-but label {
   /* display: inline-block; */
