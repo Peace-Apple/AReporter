@@ -216,16 +216,22 @@ footer .flex-parent-ft .flex-child-ft h4 {
   box-shadow: 0 0 5px 0 gray;
 }
 .incident-table tr td{
-  padding: 4px;
+  padding: 4.9px;
 }
 .title {
   font-weight: bold;
   text-align: center;
   font-size: 18px;
 }
+.title td[id='inc-tit'] {
+  padding-top: 20px;
+}
 .sub-title {
   font-weight: bold;
   font-style: italic;
+}
+.sub-title td[id='inc-subtit'] {
+  padding-top: 12px;
 }
 .no-cases {
   color: black;

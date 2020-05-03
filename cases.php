@@ -59,10 +59,10 @@
                             $police =$row["police"];
 
                             echo "<tr class='title'>";
-                                echo "<td>" ."INCIDENT ". $id. "</td>";
+                                echo "<td id='inc-tit'>" ."INCIDENT ". $id. "</td>";
                             echo "</tr>";
                             echo "<tr class='sub-title'>";
-                                echo "<td>" ."Victim's Details". "</td>";
+                                echo "<td id='inc-subtit'>" ."Victim's Details". "</td>";
                             echo "</tr>";
                             echo "<tr>";
                                 echo "<td>" . "Name: " . "</td>";
@@ -77,7 +77,7 @@
                                 echo "<td>" . $victimsex . "</td>";
                             echo "</tr>";
                             echo "<tr class='sub-title'>";
-                                echo "<td>" ."Reporter's Details". "</td>";
+                                echo "<td id='inc-subtit'>" ."Reporter's Details". "</td>";
                             echo "</tr>";
                             echo "<tr>";
                                 echo "<td>" . "Name: ". "</td>";
@@ -88,7 +88,7 @@
                                 echo "<td>" . $reportercontact . "</td>";
                             echo "</tr>";
                             echo "<tr class='sub-title'>";
-                                echo "<td>" ."Incident Details". "</td>";
+                                echo "<td id='inc-subtit'>" ."Incident Details". "</td>";
                             echo "</tr>";
                             echo "<tr>";
                                 echo "<td>" . "Location: ". "</td>";
