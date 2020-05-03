@@ -53,7 +53,7 @@
             <label for="victimaddress">Address of victim<span>*</span></label><br>
             <input type="text" name="victimaddress" id="victimaddress" required="required" />
             <br><br>
-            <label for="victimsex">Gender of victim<span>*</span></label><br><br>
+            <label for="victimsex">Gender of victim<span>*</span></label>
             <div class="radio-but">
                 <input type="radio" name="victimsex" id="victimsex" value="Male" required="required" />
                 <label for="male">Male</label>
@@ -77,30 +77,38 @@
             <label for="description">Description of incident<span>*</span></label><br>
             <textarea name="description" id="description" placeholder="Enter text here..."></textarea>
             <br><br>
-            <label for="witness">Were there any witnesses?<span>*</span></label><br>
-            <input type="radio" name="witness" id="witness" value="Yes" required="required" />
-            <label for="yes">Yes</label>
-            <input type="radio" name="witness" id="witness" value="No" required="required" />
-            <label for="no">No</label>
-            <br><br>
-            <label for="injury">Was the individual injured?<span>*</span></label><br>
-            <input type="radio" name="injury" id="injury" value="Yes" required="required" />
-            <label for="yes">Yes</label>
-            <input type="radio" name="injury" id="injury" value="No" required="required" />
-            <label for="no">No</label>
-            <br><br>
-            <label for="treatment">Was medical treatment provided?<span>*</span></label><br>
-            <input type="radio" name="treatment" id="treatment" value="Yes" required="required" />
-            <label for="yes">Yes</label>
-            <input type="radio" name="treatment" id="treatment" value="No" required="required" />
-            <label for="no">No</label>
-            <br><br>
-            <label for="police">Do you want the police to get in touch with you?<span>*</span></label><br>
-            <input type="radio" name="police" id="police" value="Yes" required="required" />
-            <label for="yes">Yes</label>
-            <input type="radio" name="police" id="police" value="No" required="required" />
-            <label for="yes">No</label>
-            <br><br>
+            <label for="witness">Were there any witnesses?<span>*</span></label>
+            <div class="radio-but">
+                <input type="radio" name="witness" id="witness" value="Yes" required="required" />
+                <label for="yes">Yes</label>
+                <input type="radio" name="witness" id="witness" value="No" required="required" />
+                <label for="no">No</label>
+            </div>
+            <br>
+            <label for="injury">Was the individual injured?<span>*</span></label>
+            <div class="radio-but">
+                <input type="radio" name="injury" id="injury" value="Yes" required="required" />
+                <label for="yes">Yes</label>
+                <input type="radio" name="injury" id="injury" value="No" required="required" />
+                <label for="no">No</label>
+            </div>
+            <br>
+            <label for="treatment">Was medical treatment provided?<span>*</span></label>
+            <div class="radio-but">
+                <input type="radio" name="treatment" id="treatment" value="Yes" required="required" />
+                <label for="yes">Yes</label>
+                <input type="radio" name="treatment" id="treatment" value="No" required="required" />
+                <label for="no">No</label>
+            </div>
+            <br>
+            <label for="police">Do you want the police to get in touch with you?<span>*</span></label>
+            <div class="radio-but">
+                <input type="radio" name="police" id="police" value="Yes" required="required" />
+                <label for="yes">Yes</label>
+                <input type="radio" name="police" id="police" value="No" required="required" />
+                <label for="yes">No</label>
+            </div>
+            <br>
             <input type="checkbox" name="certify" id="certify" required="required" />
             <b>I certify that the above information is true and correct<span>*</span></b>
             <br><br>
