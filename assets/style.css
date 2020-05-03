@@ -265,6 +265,9 @@ footer .flex-parent-ft .flex-child-ft h4 {
   width: 0;
 }
 /* Customize radio buttons */
+.radio-but {
+  margin-top: 12px;
+}
 .radio-but label {
   /* display: inline-block; */
   background-color: #ddd;
@@ -275,11 +278,11 @@ footer .flex-parent-ft .flex-child-ft h4 {
 .radio-but label:hover {
   background-color: #dfd;
 }
-/* .radio-but input[type="radio"]:focus + label {
-    border: 2px dashed #444;
-} */
+.radio-but input[type="radio"]:focus + label {
+    border: 1px dashed blue;
+}
 .radio-but input[type="radio"]:checked + label {
-    background-color: #bfb;
+    background-color: red;
     border-color: #4c4;
 }
 .form textarea {
