@@ -266,22 +266,18 @@ footer .flex-parent-ft .flex-child-ft h4 {
 }
 /* Customize radio buttons */
 .radio-but label {
-  display: inline-block;
+  /* display: inline-block; */
   background-color: #ddd;
-  padding: 10px 20px;
-  font-family: sans-serif, Arial;
-  font-size: 16px;
-  border: 2px solid #444;
+  padding: 5px 10px;
+  border: 1px solid maroon;
   border-radius: 4px;
 }
 .radio-but label:hover {
   background-color: #dfd;
 }
-
-.radio-but input[type="radio"]:focus + label {
+/* .radio-but input[type="radio"]:focus + label {
     border: 2px dashed #444;
-}
-
+} */
 .radio-but input[type="radio"]:checked + label {
     background-color: #bfb;
     border-color: #4c4;
