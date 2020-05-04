@@ -127,27 +127,32 @@
                         }
                     echo "</table>";
                 // /*freeresultset*/
-                // $result->free();    
+                // $result->free(); 
+                   
+                    // pagination links
+                    echo '<div class="page_links">';
+                        $page_query = "SELECT * FROM `incidents` order by id DESC";
+                        $page_result = $conn->query($page_query);
+                        $total_records = mysqli_num_rows($page_result);
+                        $total_pages = ceil($total_records/$records_per_page);
+
+                        if ($page > 1 && $page != 1) { 
+                            echo '<a href="cases.php?page=' . ($page-1) . '"><button class="prev-button">Prev</button></a>';
+                        }
+                        
+                        for ($page=1; $page <= $total_pages; $page++) { 
+                            echo '<a href="cases.php?page=' . $page . '"><button class="page_no">' . $page . '</button></a> ';
+                        }
+                        if ($page) {
+                            echo '<a href="cases.php?page=' . ($page+1) . '"><button class="next-button">Next</button></a>';
+                        }
+
+                        $conn->close();
+                    echo '</div>';
                 }
             
             }
         ?>
-        <div class="page_links">
-            <?php
-                $page_query = "SELECT * FROM `incidents` order by id DESC";
-                $page_result = $conn->query($page_query);
-                $total_records = mysqli_num_rows($page_result);
-                $total_pages = ceil($total_records/$records_per_page);
-
-                echo '<button class="prev-button">Prev</button>';
-                for ($page=1; $page <= $total_pages; $page++) { 
-                    echo '<a href="cases.php?page=' . $page . '"><button class="page_no">' . $page . '</button></a> ';
-                }
-                echo '<button class="next-button">Next</button>';
-
-                $conn->close();
-            ?>
-        </div>
         
     </div>
 </div>
