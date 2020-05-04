@@ -126,8 +126,8 @@
 
                         }
                     echo "</table>";
-                // /*freeresultset*/
-                // $result->free(); 
+                    /*freeresultset*/
+                    $result->free(); 
                    
                     // pagination links
                     echo '<div class="page_links">';
@@ -143,6 +143,7 @@
                         for ($page=1; $page <= $total_pages; $page++) { 
                             echo '<a href="cases.php?page=' . $page . '"><button class="page_no">' . $page . '</button></a> ';
                         }
+                        
                         if ($page) {
                             echo '<a href="cases.php?page=' . ($page+1) . '"><button class="next-button">Next</button></a>';
                         }
