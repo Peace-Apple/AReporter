@@ -85,13 +85,18 @@
 }
 .home-page p {
   color: white;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
   font-size: 25px;
   font-style: italic;
   font-weight: bold;
 }
+p.first {
+  padding-left: 600px;
+  font-size: 35px;
+  color: wheat;
+}
 p.one {
-  padding-left: 500px;
+  padding-left: 400px;
 }
 p.two {
   padding-left: 250px;
