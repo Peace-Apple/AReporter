@@ -145,7 +145,7 @@
                         }
                         
                         if ($page) {
-                            echo '<a href="cases.php?page=' . ($page+1) . '"><button class="next-button">Next</button></a>';
+                            echo '<a href="cases.php?page=' . ($page-1) . '"><button class="next-button">Next</button></a>';
                         }
 
                         $conn->close();
