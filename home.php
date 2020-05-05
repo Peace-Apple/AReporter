@@ -11,7 +11,8 @@
 ?>
     <main>
         <div class="home-page">
-            <p class="one"><?php echo $user;?> Welcome to A-Reporter!</p>
+            <p class="first"><?php echo 'Hey ' .$user. ',';?></p>
+            <p class="one"> Welcome to A-Reporter!</p>
             <p class="two">Witnessed an accident? Report today!</p>
             <p class="three">Reach out now!</p>
             <p class="four">Let us know today</p>
