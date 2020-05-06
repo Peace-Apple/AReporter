@@ -25,7 +25,7 @@
                 $_SESSION['user'] = $username; //set the username in a session. This serves as a global variable
 
                 if ($admin) {
-                    header("location: admin.php"); // redirects the admin to the authenticated admin page
+                    header("location: cases.php"); // redirects the admin to the authenticated page
                 } else {
                     header("location: home.php"); // redirects the user to the authenticated home page
                 }
