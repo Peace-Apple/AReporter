@@ -19,7 +19,7 @@
 
     $start_from = ($page - 1) * $records_per_page;
 
-    $sql = "SELECT * FROM `incidents` order by id DESC LIMIT $start_from, $records_per_page";
+    $sql = "SELECT * FROM `incidents` order by id LIMIT $start_from, $records_per_page";
 
 ?>
 
@@ -59,10 +59,10 @@
                             $police =$row["police"];
 
                             echo "<tr class='title'>";
-                                echo "<td id='inc-tit'>" ."INCIDENT ". $id. "</td>";
+                                echo "<td colspan='2' id='inc-tit'>" ."INCIDENT ". $id. "</td>";
                             echo "</tr>";
                             echo "<tr class='sub-title'>";
-                                echo "<td id='inc-subtit'>" ."Victim's Details". "</td>";
+                                echo "<td id='inc-subtit' colspan='2'>" ."Victim's Details". "</td>";
                             echo "</tr>";
                             echo "<tr>";
                                 echo "<td>" . "Name: " . "</td>";
@@ -77,7 +77,7 @@
                                 echo "<td>" . $victimsex . "</td>";
                             echo "</tr>";
                             echo "<tr class='sub-title'>";
-                                echo "<td id='inc-subtit'>" ."Reporter's Details". "</td>";
+                                echo "<td id='inc-subtit' colspan='2'>" ."Reporter's Details". "</td>";
                             echo "</tr>";
                             echo "<tr>";
                                 echo "<td>" . "Name: ". "</td>";
@@ -88,24 +88,24 @@
                                 echo "<td>" . $reportercontact . "</td>";
                             echo "</tr>";
                             echo "<tr class='sub-title'>";
-                                echo "<td id='inc-subtit'>" ."Incident Details". "</td>";
+                                echo "<td id='inc-subtit' colspan='2'>" ."Incident Details". "</td>";
                             echo "</tr>";
                             echo "<tr>";
                                 echo "<td>" . "Location: ". "</td>";
                                 echo "<td>" . $location. "</td>";
                             echo "</tr>";
                             echo "<tr>";
-                                echo "<td>" ."Date and time of incident: ". "</td>";
+                                echo "<td colspan='2'>" ."Date and time of incident: ". "</td>";
                             echo "</tr>";
                             echo "<tr>";
                                 echo "<td>" . $date. "</td>";
                                 echo "<td>" . $time. "</td>";
                             echo "</tr>";
                             echo "<tr>";
-                                echo "<td>" ."Description of incident: ". "</td>";
+                                echo "<td colspan='2'>" ."Description of incident: ". "</td>";
                             echo "</tr>";
                             echo "<tr>";
-                                echo "<td>" . $description . "</td>";
+                                echo "<td colspan='2'>" . $description . "</td>";
                             echo "</tr>";
                             echo "<tr>";
                                 echo "<td>" . "Were there any witnesses? ". "</td>";
@@ -131,7 +131,7 @@
                    
                     // pagination links
                     echo '<div class="page_links">';
-                        $page_query = "SELECT * FROM `incidents` order by id DESC";
+                        $page_query = "SELECT * FROM `incidents` order by id";
                         $page_result = $conn->query($page_query);
                         $total_records = mysqli_num_rows($page_result);
                         $total_pages = ceil($total_records/$records_per_page);
