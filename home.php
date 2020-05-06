@@ -1,7 +1,6 @@
 <?php include "templates/header.php"; ?>
 
 <?php
-   session_start(); //starts the session
    if($_SESSION['user']){ // checks if the user is logged in  
    }
    else{
