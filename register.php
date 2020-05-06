@@ -38,7 +38,7 @@
                 <br><br>
                 <input type="password" name="password" id="password" placeholder="Confirm Password" required="required" />
                 <br><br>
-                <input type="submit" name="submit" value="Signup"/>
+                <input type="submit" name="submit" value="Register"/>
             </form>
             <p><a href="index.php">Have an account? Login</a></p>
         </div>
