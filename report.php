@@ -1,7 +1,6 @@
 <?php include "templates/header.php"; ?>
 <?php include "connection.php"; ?>
 <?php
-    session_start();
     if($_SESSION['user']){
     }
     else{ 
