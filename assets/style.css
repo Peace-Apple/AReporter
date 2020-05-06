@@ -368,6 +368,7 @@ footer .flex-parent-ft .flex-child-ft h4 {
   outline-color: blueviolet;
   resize: none;
   overflow: auto;
+  overflow-wrap: normal;
 }
 .form span {
   color: red;
