@@ -13,9 +13,8 @@
     <?php
         session_start(); //starts session
         if($_SESSION['user']){
-
+          $user = $_SESSION['user'];
         }
-        $user = $_SESSION['user'];
     ?>
     <div  class="content-wrap">
         <div class="main">
