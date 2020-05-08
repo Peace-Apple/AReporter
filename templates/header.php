@@ -13,7 +13,7 @@
     <?php
         session_start(); //starts session
         if($_SESSION['user']){
-          $user = $_SESSION['user'];
+          $user = $_SESSION['admin'];
         }
     ?>
     <div  class="content-wrap">
@@ -21,7 +21,7 @@
         <header>
             <nav class="fixed-nav">
                 <?php 
-                if ($user != 'Deyo') {
+                if ($user != 1) {
                     echo '<div class="header-title">
                             <h2><a href="home.php">A-Reporter<a></h2>
                         </div>
