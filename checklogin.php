@@ -23,6 +23,7 @@
             if($password == $table_password)
             {
                 $_SESSION['user'] = $username; //set the username in a session. This serves as a global variable
+                $_SESSION['admin'] = $admin;
 
                 if ($admin) {
                     header("location: cases.php"); // redirects the admin to the authenticated page
