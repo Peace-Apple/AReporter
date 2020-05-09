@@ -30,8 +30,7 @@
                 } else {
                     header("location: home.php"); // redirects the user to the authenticated home page
                 }
-            }
-                
+            }    
         }
         else
         {
