@@ -3,11 +3,6 @@
 <head>
     <title>AReporter</title>
     <link rel="stylesheet" href="assets/style.css" />
-    <style>
-        html, body {
-            height: 100%;
-        }
-    </style>
 </head>
 <body class="mainbody">
     <?php
