@@ -19,11 +19,9 @@
     $start_from = ($page - 1) * $records_per_page;
 
     $sql = "SELECT * FROM `incidents` order by id LIMIT $start_from, $records_per_page";
-
 ?>
 
 <div class="cases">
-
     <h2>REPORTED ACCIDENTS</h2>
     <div class="cases-display">
         
@@ -146,14 +144,12 @@
                         if ($page) {
                             echo '<a href="cases.php?page=' . ($page-1) . '"><button class="next-button">Next</button></a>';
                         }
-
                         $conn->close();
                     echo '</div>';
                 }
             
             }
         ?>
-        
     </div>
 </div>
 <?php include "templates/footer.php"; ?>
