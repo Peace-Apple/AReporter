@@ -1,3 +1,6 @@
+html, body {
+  height: 100%;
+}
 .mainbody {
   background: url('images/mag.jpeg');
   background-size: cover;
