@@ -8,7 +8,6 @@
 
         $sql = "INSERT INTO `user` (`username`, `email`, `contact`, `password`) VALUES ('$name', '$email', '$contact', '$pass')";
 
-
         if($conn->query($sql) === TRUE){
             Print '<script>alert("Your account has been created successfully, please login");</script>';
         } else {
