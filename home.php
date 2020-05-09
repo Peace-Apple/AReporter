@@ -5,7 +5,7 @@
     $user = $_SESSION['user']; //assigns user value
    }
    else{
-      header("location: index.php"); // redirects if user is not logged in
+      header("location: index.php"); // redirects to login page if user is not logged in
    }
 ?>
     <main>
