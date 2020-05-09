@@ -38,7 +38,6 @@
         $conn->close();
         Print '<script>window.location.assign("cases.php");</script>';
     }
-
 ?>
 
 <div class ="report-form">
