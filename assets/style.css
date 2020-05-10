@@ -171,7 +171,7 @@ footer a {
   font-size: 15px;
 }
 footer .flex-parent-ft{
-  padding: 50px 600px 10px 500px;
+  padding: 50px 600px 10px 600px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -195,6 +195,7 @@ footer .flex-parent-ft .flex-child-ft h4 {
   font-style: italic;
   font-weight: bold;
   font-size: 15px;
+  margin-top: 30px;
 }
 
 /* Style incidents page */
