@@ -133,6 +133,13 @@
                         $total_records = mysqli_num_rows($page_result);
                         $total_pages = ceil($total_records/$records_per_page);
 
+                        if ($page < 1) {
+                            $page = 1;
+                        }
+                        if ($page > $total_pages) {
+                            $page = $total_pages;
+                        }
+
                         if ($page > 1 && $page != 1) { 
                             echo '<a href="cases.php?page=' . ($page-1) . '"><button class="prev-button">Prev</button></a>';
                         }
@@ -142,7 +149,7 @@
                         }
                         
                         if ($page) {
-                            echo '<a href="cases.php?page=' . ($page-1) . '"><button class="next-button">Next</button></a>';
+                            echo '<a href="cases.php?page=' . ($page+1) . '"><button class="next-button">Next</button></a>';
                         }
                         $conn->close();
                     echo '</div>';
