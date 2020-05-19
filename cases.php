@@ -148,9 +148,9 @@
                             echo '<a href="cases.php?page=' . $page . '"><button class="page_no">' . $page . '</button></a> ';
                         }
                         
-                        // if ($page < $total_pages) {
-                        //     echo '<a href="cases.php?page=' . ($page+1) . '"><button class="next-button">Next</button></a>';
-                        // }
+                        if ($page < $total_pages) {
+                            echo '<a href="cases.php?page=' . ($page+1) . '"><button class="next-button">Next</button></a>';
+                        }
                         $conn->close();
                     echo '</div>';
                 }
