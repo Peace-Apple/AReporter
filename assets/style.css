@@ -358,11 +358,9 @@ footer .flex-parent-ft .flex-child-ft h4 {
 .radio-but {
   margin: 11px 0px 11px 0px;
 }
-.radio-but label {
-  cursor: pointer;
-}
 .radio-but span {
   display: inline-block;
+  cursor: pointer;
   margin: 0px 10px 0px 0px;
   width: 52px;
   border: 1px solid silver;
