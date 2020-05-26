@@ -45,58 +45,62 @@
     <div class="form">
         <form action="report.php" method="post">
             <h3>PERSON INVOLVED IN INCIDENT</h3>
-            <label for="victimname">Name of victim<span>*</span></label><br>
+            <label for="victimname">Name of victim<span class="asterik">*</span></label><br>
             <input type="text" name="victimname" id="victimname" required="required" />
             <br><br>
-            <label for="victimaddress">Address of victim<span>*</span></label><br>
+            <label for="victimaddress">Address of victim<span class="asterik">*</span></label><br>
             <input type="text" name="victimaddress" id="victimaddress" required="required" />
             <br><br>
-            <label for="victimsex">Gender of victim<span>*</span></label>
+            <label for="victimsex">Gender of victim<span class="asterik">*</span></label>
             <div class="radio-but">
+                <label for="male">
                 <input type="radio" name="victimsex" id="victimsex" value="Male" required="required" />
-                <label for="male">Male</label>
+                <span class="male">Male</span>
+                </label>
+                <label for="female">
                 <input type="radio" name="victimsex" id="victimsex" value="Female" required="required" />
-                <label for="female">Female</label>
+                <span class="female">Female</span>
+                </label>
             </div>
             <h3>REPORTER DETAILS</h3>
-            <label for="reportername">Name of Reporter<span>*</span></label> <br>
+            <label for="reportername">Name of Reporter<span class="asterik">*</span></label> <br>
             <input type="text" name="reportername" id="reportername" required="required" />
             <br><br>
-            <label for="reportercontact">Contact of Reporter<span>*</span></label><br>
+            <label for="reportercontact">Contact of Reporter<span class="asterik">*</span></label><br>
             <input type="number" name="reportercontact" id="reportercontact" required="required" />
             <h3>INFORMATION ABOUT THE INCIDENT</h3>
-            <label for="location">Location of incident<span>*</span></label><br>
+            <label for="location">Location of incident<span class="asterik">*</span></label><br>
             <input type="text" name="location" id="location" required="required" />
             <br><br>
-            <label for="incidentdate">Date and time of incident<span>*</span></label><br>
+            <label for="incidentdate">Date and time of incident<span class="asterik">*</span></label><br>
             <input type="date" name="date" id="date" />
             <input type="time" name="time" id="time" />
             <br><br>
-            <label for="description">Description of incident<span>*</span></label><br>
+            <label for="description">Description of incident<span class="asterik">*</span></label><br>
             <textarea name="description" id="description" placeholder="Enter text here..."></textarea>
             <br><br>
-            <label for="witness">Were there any witnesses?<span>*</span></label>
+            <label for="witness">Were there any witnesses?<span class="asterik">*</span></label>
             <div class="radio-but">
                 <input type="radio" name="witness" id="witness" value="Yes" required="required" />
                 <label for="yes">Yes</label>
                 <input type="radio" name="witness" id="witness" value="No" required="required" />
                 <label for="no">No</label>
             </div>
-            <label for="injury">Was the individual injured?<span>*</span></label>
+            <label for="injury">Was the individual injured?<span class="asterik">*</span></label>
             <div class="radio-but">
                 <input type="radio" name="injury" id="injury" value="Yes" required="required" />
                 <label for="yes">Yes</label>
                 <input type="radio" name="injury" id="injury" value="No" required="required" />
                 <label for="no">No</label>
             </div>
-            <label for="treatment">Was medical treatment provided?<span>*</span></label>
+            <label for="treatment">Was medical treatment provided?<span class="asterik">*</span></label>
             <div class="radio-but">
                 <input type="radio" name="treatment" id="treatment" value="Yes" required="required" />
                 <label for="yes">Yes</label>
                 <input type="radio" name="treatment" id="treatment" value="No" required="required" />
                 <label for="no">No</label>
             </div>
-            <label for="police">Do you want the police to get in touch with you?<span>*</span></label>
+            <label for="police">Do you want the police to get in touch with you?<span class="asterik">*</span></label>
             <div class="radio-but">
                 <input type="radio" name="police" id="police" value="Yes" required="required" />
                 <label for="yes">Yes</label>
@@ -104,7 +108,7 @@
                 <label for="yes">No</label>
             </div>
             <input type="checkbox" name="certify" id="certify" required="required" />
-            <b>I certify that the above information is true and correct<span>*</span></b>
+            <b>I certify that the above information is true and correct<span class="asterik">*</span></b>
             <br><br>
             <input type="submit" name="submit" value="Report Now"/>
         </form>
