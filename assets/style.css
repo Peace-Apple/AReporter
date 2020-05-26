@@ -372,6 +372,9 @@ footer .flex-parent-ft .flex-child-ft h4 {
   font-weight: bold;
   text-align: center;
 }
+.radio-but span:hover {
+background-color: lightgray;
+}
 .radio-but label input:checked  ~ span {
   color: maroon;
   border: 1px solid blueviolet;
