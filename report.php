@@ -55,11 +55,11 @@
             <div class="radio-but">
                 <label for="male">
                     <input type="radio" name="victimsex" id="male" value="Male" required="required" />
-                    <span class="male">Male</span>
+                    <span class="yes">Male</span>
                 </label>
                 <label for="female">
                     <input type="radio" name="victimsex" id="female" value="Female" required="required" />
-                    <span class="female">Female</span>
+                    <span class="no">Female</span>
                 </label>
             </div>
             <h3>REPORTER DETAILS</h3>
@@ -81,31 +81,47 @@
             <br><br>
             Were there any witnesses?<span class="asterik">*</span>
             <div class="radio-but">
-                <input type="radio" name="witness" id="witness" value="Yes" required="required" />
-                <label for="yes">Yes</label>
-                <input type="radio" name="witness" id="witness" value="No" required="required" />
-                <label for="no">No</label>
+                <label>
+                    <input type="radio" name="witness" id="yes" value="Yes" required="required" />
+                    <span class="yes">Yes</span>
+                </label>
+                <label>
+                    <input type="radio" name="witness" id="no" value="No" required="required" />
+                    <span class="no">No</span>
+                </label>
             </div>
             Was the individual injured?<span class="asterik">*</span>
             <div class="radio-but">
-                <input type="radio" name="injury" id="injury" value="Yes" required="required" />
-                <label for="yes">Yes</label>
-                <input type="radio" name="injury" id="injury" value="No" required="required" />
-                <label for="no">No</label>
+                <label>
+                    <input type="radio" name="injury" id="yes" value="Yes" required="required" />
+                    <span class="yes">Yes</span>
+                </label>
+                <label>
+                    <input type="radio" name="injury" id="no" value="No" required="required" />
+                    <span class="no">No</span>                    
+                </label>
             </div>
             Was medical treatment provided?<span class="asterik">*</span>
             <div class="radio-but">
-                <input type="radio" name="treatment" id="treatment" value="Yes" required="required" />
-                <label for="yes">Yes</label>
-                <input type="radio" name="treatment" id="treatment" value="No" required="required" />
-                <label for="no">No</label>
+                <label>
+                    <input type="radio" name="treatment" id="yes" value="Yes" required="required" />
+                    <span class="yes">Yes</span>
+                </label>
+                <label>
+                    <input type="radio" name="treatment" id="no" value="No" required="required" />
+                    <span class="no">No</span> 
+                </label>
             </div>
             Do you want the police to get in touch with you?<span class="asterik">*</span>
             <div class="radio-but">
-                <input type="radio" name="police" id="police" value="Yes" required="required" />
-                <label for="yes">Yes</label>
-                <input type="radio" name="police" id="police" value="No" required="required" />
-                <label for="yes">No</label>
+                <label>
+                    <input type="radio" name="police" id="yes" value="Yes" required="required" />
+                    <span class="yes">Yes</span>
+                </label>
+                <label>
+                    <input type="radio" name="police" id="no" value="No" required="required" />
+                    <span class="no">No</span> 
+                </label>
             </div>
             <input type="checkbox" name="certify" id="certify" required="required" />
             <b>I certify that the above information is true and correct<span class="asterik">*</span></b>
