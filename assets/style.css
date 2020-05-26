@@ -359,26 +359,25 @@ footer .flex-parent-ft .flex-child-ft h4 {
   margin: 12px 0px 13px 0px;
 }
 .radio-but label {
-  position: relative;
   cursor: pointer;
 }
 .radio-but span {
-  position: relative;
   display: inline-block;
   margin: 0px 10px 0px 0px;
   width: 52px;
   border: 1px solid silver;
-  padding: 5px;
+  padding: 3px;
   background-color: wheat;
   color: black;
   font-size: 14px;
   border-radius: 5px;
+  font-weight: bold;
 }
 .radio-but label input:checked  ~ span {
   color: maroon;
   border: 1px solid blueviolet;
 }
-.radio-but label input:checked ~ span.male {
+.radio-but label input:checked ~ span.yes {
   color: green;
   border-color: green;
   box-shadow: inset 0 0 10px green;
@@ -387,7 +386,7 @@ footer .flex-parent-ft .flex-child-ft h4 {
 .radio-but label input:checked ~ span.male:after {
   background-color: green;
 }
-.radio-but label input:checked ~ span.female {
+.radio-but label input:checked ~ span.no {
   color: red;
   border-color: red;
   box-shadow: inset 0 0 10px red;
