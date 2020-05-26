@@ -18,7 +18,7 @@
 
     $start_from = ($page - 1) * $records_per_page;
 
-    $sql = "SELECT * FROM `incidents` order by id LIMIT $start_from, $records_per_page";
+    $sql = "SELECT * FROM `incidents` order by id DESC LIMIT $start_from, $records_per_page";
 ?>
 
 <div class="cases">
