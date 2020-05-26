@@ -367,46 +367,24 @@ footer .flex-parent-ft .flex-child-ft h4 {
   display: inline-block;
   margin: 0px 10px 0px 0px;
   width: 52px;
-  border: 2px solid silver;
+  border: 1px solid silver;
   padding: 5px;
-  background-color: black;
-  color: white;
+  background-color: wheat;
+  color: black;
   font-size: 14px;
   border-radius: 5px;
 }
 .radio-but label input:checked  ~ span {
-  color: purple;
-  border-color: 2px solid purple;
-}
-/* .radio-but label input:checked ~ span:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: lightblue;
-  z-index: -1;
-  filter: blur(10px);
-}
-.radio-but label input:checked ~ span:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: lightblue;
-  z-index: -1;
-  filter: blur(15px);
+  color: maroon;
+  border: 1px solid blueviolet;
 }
 .radio-but label input:checked ~ span.male {
   color: green;
   border-color: green;
   box-shadow: inset 0 0 10px green;
 }
-.radio-but label input:checked ~ span.male::before,
-.radio-but label input:checked ~ span.male::after {
+.radio-but label input:checked ~ span.male:before,
+.radio-but label input:checked ~ span.male:after {
   background-color: green;
 }
 .radio-but label input:checked ~ span.female {
@@ -414,10 +392,10 @@ footer .flex-parent-ft .flex-child-ft h4 {
   border-color: red;
   box-shadow: inset 0 0 10px red;
 }
-.radio-but label input:checked ~ span.female::before,
-.radio-but label input:checked ~ span.female::after {
+.radio-but label input:checked ~ span.female:before,
+.radio-but label input:checked ~ span.female:after {
   background-color: red;
-} */
+}
 
 /* Pagination style */
 .page_links {
