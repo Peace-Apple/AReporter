@@ -123,8 +123,13 @@
                     <span class="no">No</span> 
                 </label>
             </div>
-            <input type="checkbox" name="certify" id="certify" required="required" />
-            <b>I certify that the above information is true and correct<span class="asterik">*</span></b>
+            <div class="check-box">
+                <label>
+                    <input type="checkbox" name="certify" id="checkbox-label" required="required" />
+                    I certify that the above information is true and correct
+                    <span class="custom-checkbox"></span>
+                </label>
+            </div>
             <br><br>
             <input type="submit" name="submit" value="Report Now"/>
         </form>
