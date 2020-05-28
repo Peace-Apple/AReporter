@@ -123,11 +123,10 @@
                     <span class="no">No</span> 
                 </label>
             </div>
-            <div class="check-box">
-                <label>
+            <div>
+                <label class="check-box">I certify that the above information is true and correct<span class="asterik">*</span>
                     <input type="checkbox" name="certify" id="checkbox-label" required="required" />
-                    I certify that the above information is true and correct
-                    <span class="custom-checkbox"></span>
+                    <span class="checkmark"></span>
                 </label>
             </div>
             <br><br>
