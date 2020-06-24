@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body class="auth">
-    <h3>Welcome to A-REPORTER, report a accident today!</h3>
+    <h3>Welcome to A-REPORTER, report an accident today!</h3>
     <div class="auth-forms">
         <div class="login">
             <h2>Login</h2>
