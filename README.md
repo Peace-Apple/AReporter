@@ -9,7 +9,7 @@ A-reporter enables different people to report accidents to the police by filling
 The application is hosted here: [AReporter](https://apple-areporter.herokuapp.com/)
 
 ##### Built with
-PHP, HTML and CSS
+PHP, JQuery, HTML and CSS
 
 #### Author
 [Peace Acio](https://github.com/Peace-Apple)
