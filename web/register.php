@@ -1,4 +1,4 @@
-<?php include "connection.php"; ?>
+<?php include "../connection.php"; ?>
 <?php
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $name = $_POST['username'];

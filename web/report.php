@@ -1,5 +1,5 @@
 <?php include "templates/header.php"; ?>
-<?php include "connection.php"; ?>
+<?php include "../connection.php"; ?>
 <?php
     if($_SESSION['user']){
     }

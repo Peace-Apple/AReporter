@@ -1,4 +1,4 @@
-<?php include "connection.php"; ?>
+<?php include "../connection.php"; ?>
 <?php
     session_start();
     $username = $_POST['username'];
