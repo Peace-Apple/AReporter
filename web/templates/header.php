@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>AReporter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body class="mainbody">
