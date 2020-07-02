@@ -6,9 +6,9 @@
 
 //for heroku
 $servername = 'us-cdbr-east-02.cleardb.com';
-$username = 'b3f0fb98b6d83a';
-$password = 'df6e6888';
-$dbname = 'heroku_88c56968840da86';
+$username = 'b01c4b8ca82976';
+$password = '5e814560';
+$dbname = 'heroku_62868d08fbbbc04';
 
 //make the connection
 $conn = new MySQLi($servername, $username, $password, $dbname);
