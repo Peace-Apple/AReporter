@@ -24,10 +24,8 @@
         $certify = $_POST['certify'];
         
 
-        $sql = "INSERT INTO `incidents` 
-            (victimname, victimaddress, victimsex, reportername, reportercontact, location, date, time, description, witness, injury, treatment, police, certify)
-            VALUES 
-            ('$victimname', '$victimaddress','$victimsex', '$reportername', '$reportercontact', '$location', '$date', '$time', '$description', '$witness', '$injury', '$treatment', '$police', '$certify')";
+        $sql = "INSERT INTO incidents (victimname, victimaddress, victimsex, reportername, reportercontact, location, date, time, description, witness, injury, treatment, police, certify) 
+        VALUES('$victimname', '$victimaddress','$victimsex', '$reportername', $reportercontact, '$location', '$date', '$time', '$description', '$witness', '$injury', '$treatment', '$police', '$certify')";
 
         if($conn->query($sql) === TRUE){
             Print '<script>alert("New incident reported successfully");</script>';
