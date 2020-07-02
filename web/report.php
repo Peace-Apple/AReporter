@@ -25,7 +25,7 @@
         
 
         $sql = "INSERT INTO `incidents` 
-            (`victimname`, `victimaddress`,`victimsex`, `reportername`, `reportercontact`, `location`, `date`, `time`, `description`, `witness`, `injury`, `treatment`, `police`, `certify`)
+            (victimname, victimaddress, victimsex, reportername, reportercontact, location, date, time, description, witness, injury, treatment, police, certify)
             VALUES 
             ('$victimname', '$victimaddress','$victimsex', '$reportername', '$reportercontact', '$location', '$date', '$time', '$description', '$witness', '$injury', '$treatment', '$police', '$certify')";
 
