@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 02, 2020 at 12:42 PM
+-- Generation Time: Jul 02, 2020 at 02:28 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -36,7 +36,7 @@ CREATE TABLE `incidents` (
   `reportername` varchar(30) NOT NULL,
   `reportercontact` int(10) UNSIGNED ZEROFILL NOT NULL,
   `location` varchar(30) NOT NULL,
-  `date` date NOT NULL,
+  `date` varchar(15) NOT NULL,
   `time` time NOT NULL,
   `description` varchar(500) NOT NULL,
   `witness` varchar(15) NOT NULL,
@@ -60,7 +60,9 @@ INSERT INTO `incidents` (`id`, `victimname`, `victimaddress`, `victimsex`, `repo
 (31, 'Joel', 'Bweyos', 'Male', 'Apple', 0903393033, 'Kenya', '0344-12-31', '14:23:00', 'He lies alot', 'No', 'Yes', 'No', 'Yes', 'on'),
 (32, 'Achie', 'Mutungo, Zone 8', 'Female', 'Ethan', 0705467839, 'Bweyos', '2020-06-24', '12:23:00', 'Moving forward and making a change', 'Yes', 'No', 'No', 'No', 'on'),
 (33, 'Acio', 'Kenya', 'Female', 'Pesay', 0000000123, 'Bweyos', '2020-08-02', '23:22:00', 'hhh', 'No', 'Yes', 'No', 'Yes', 'on'),
-(34, 'Peace', 'Mutungo, Zone 8', 'Female', 'Peace', 0000000012, 'kibuli', '2020-06-24', '12:23:00', 'ajjs', 'No', 'Yes', 'No', 'Yes', 'on');
+(34, 'Peace', 'Mutungo, Zone 8', 'Female', 'Peace', 0000000012, 'kibuli', '2020-06-24', '12:23:00', 'ajjs', 'No', 'Yes', 'No', 'Yes', 'on'),
+(35, 'Pesay', 'Kla', 'Female', 'Peace', 0000000067, 'Kampala', '07/01/2020', '19:08:00', 'yhuu', 'Yes', 'No', 'Yes', 'Yes', 'on'),
+(36, 'Pesay', 'Kla', 'Female', 'Peace', 0000000078, 'Kampala', '07/01/2020', '19:07:00', 'Apple', 'No', 'Yes', 'No', 'Yes', 'on');
 
 -- --------------------------------------------------------
 
@@ -117,7 +119,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `incidents`
 --
 ALTER TABLE `incidents`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT for table `user`
