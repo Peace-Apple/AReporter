@@ -71,7 +71,7 @@
             <input type="text" name="location" id="location" required="required" />
             <br><br>
             Date and time of incident<span class="asterik">*</span><br>
-            <input type="date" name="date" id="date" value="2020-06-24" min="2020-01-01" max="2021-12-31" />
+            <input type="text" name="date" id="date" />
             <input type="time" name="time" id="time" />
             <br><br>
             Description of incident<span class="asterik">*</span><br>
@@ -132,4 +132,10 @@
         </form>
     </div>
 </div>
+<!-- Do JQuery -->
+<script>
+    $(document).ready(function(){ 
+        $('#date').datepicker();
+    });
+</script>
 <?php include "templates/footer.php"; ?>
