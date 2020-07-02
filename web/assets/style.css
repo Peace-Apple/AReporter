@@ -306,16 +306,13 @@ footer .flex-parent-ft .flex-child-ft h4 {
   margin-top: 3px;
   outline-color: blueviolet;
 }
-.form input[type="date"]{
+#date{
   width: 43%;
-  padding: 10px 10px;
-  margin-top: 3px;
   margin-right: 45px;
-  outline-color: blueviolet;
 }
 .form input[type="time"]{
   width: 43%;
-  padding: 10px 10px;
+  padding: 8px 10px;
   margin-top: 3px;
   outline-color: blueviolet;
 }
