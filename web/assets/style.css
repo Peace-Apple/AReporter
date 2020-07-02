@@ -3,7 +3,7 @@ html, body {
   height: 100%;
 }
 .mainbody {
-  background: url('images/mag.jpeg');
+  /* background: url('images/mag.jpeg'); */
   background-size: cover;
   margin-top: 80px;
   font-family: sans-serif;
@@ -307,11 +307,11 @@ footer .flex-parent-ft .flex-child-ft h4 {
   outline-color: blueviolet;
 }
 #date{
-  width: 43%;
-  margin-right: 45px;
+  width: 40%;
+  margin-right: 70px;
 }
 .form input[type="time"]{
-  width: 43%;
+  width: 40%;
   padding: 8px 10px;
   margin-top: 3px;
   outline-color: blueviolet;
