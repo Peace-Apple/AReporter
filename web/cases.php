@@ -1,6 +1,7 @@
-<?php include "templates/header.php"; ?>
-<?php include "../connection.php"; ?>
-<?php
+<?php 
+    include "templates/header.php"; 
+    include "../connection.php"; 
+
     if($_SESSION['user']){
     }
     else{ 
