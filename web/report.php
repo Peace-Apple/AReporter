@@ -1,6 +1,7 @@
-<?php include "templates/header.php"; ?>
-<?php include "../connection.php"; ?>
-<?php
+<?php 
+    include "templates/header.php";
+    include "../connection.php"; 
+    
     if($_SESSION['user']){
     }
     else{ 
@@ -23,7 +24,6 @@
         $police = $_POST['police'];
         $certify = $_POST['certify'];
         
-
         $sql = "INSERT INTO incidents (victimname, victimaddress, victimsex, reportername, reportercontact, location, date, time, description, witness, injury, treatment, police, certify) 
         VALUES('$victimname', '$victimaddress','$victimsex', '$reportername', $reportercontact, '$location', '$date', '$time', '$description', '$witness', '$injury', '$treatment', '$police', '$certify')";
 
