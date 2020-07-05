@@ -440,8 +440,8 @@ background-color: lightgray;
 
 /* Pagination style */
 .page_links {
-  margin: 20px 0px 0px 720px;
-  width: 210px;
+  margin: 20px 0px 0px 140px;
+  width: 900px;
   height: 80px;
   padding: 10px 10px;
 }
@@ -471,7 +471,7 @@ background-color: lightgray;
   font-size: 15px;
   height: 30px;
 }
-.page_links button:hover {
+.page_links button:hover, input[type='submit']:hover {
   background-color: wheat;
   color: black;
 }
@@ -480,4 +480,21 @@ background-color: lightgray;
   padding: 5px 6px;
   outline: none;
   cursor: pointer;
+}
+.page_links input[type='submit']{
+  border-radius: 5px;
+  padding: 5px 6px;
+  outline: none;
+  cursor: pointer;
+}
+.goto-page {
+  width: 150px;
+  margin: 0;
+  float: right;
+  margin-right: 60px;
+}
+.goto-page input[type='text'] {
+  width: 30px;
+  padding: 5px 6px;
+  outline-color: blueviolet;
 }
