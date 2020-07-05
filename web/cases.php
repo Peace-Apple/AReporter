@@ -58,71 +58,71 @@
                             $injury =$row["injury"];
                             $police =$row["police"];
 
-                            echo "<tr class='title'>";
-                                echo "<td colspan='2' id='inc-tit'>" ."INCIDENT ". $id. "</td>";
-                            echo "</tr>";
-                            echo "<tr class='sub-title'>";
-                                echo "<td id='inc-subtit' colspan='2'>" ."Victim's Details". "</td>";
-                            echo "</tr>";
-                            echo "<tr>";
-                                echo "<td>" . "Name: " . "</td>";
-                                echo "<td>" . $victimname . "</td>";
-                            echo "</tr>";
-                            echo "<tr>";
-                                echo "<td>" . "Address: ". "</td>";
-                                echo "<td>" . $victimaddress . "</td>";
-                            echo "</tr>";
-                            echo "<tr>";
-                                echo "<td>" . "Gender: ". "</td>";
-                                echo "<td>" . $victimsex . "</td>";
-                            echo "</tr>";
-                            echo "<tr class='sub-title'>";
-                                echo "<td id='inc-subtit' colspan='2'>" ."Reporter's Details". "</td>";
-                            echo "</tr>";
-                            echo "<tr>";
-                                echo "<td>" . "Name: ". "</td>";
-                                echo "<td>" . $reportername . "</td>";
-                            echo "</tr>";
-                            echo "<tr>";
-                                echo "<td>" . "Contact: ". "</td>";
-                                echo "<td>" . $reportercontact . "</td>";
-                            echo "</tr>";
-                            echo "<tr class='sub-title'>";
-                                echo "<td id='inc-subtit' colspan='2'>" ."Incident Details". "</td>";
-                            echo "</tr>";
-                            echo "<tr>";
-                                echo "<td>" . "Location: ". "</td>";
-                                echo "<td>" . $location. "</td>";
-                            echo "</tr>";
-                            echo "<tr>";
-                                echo "<td colspan='2'>" ."Date and time of incident: ". "</td>";
-                            echo "</tr>";
-                            echo "<tr>";
-                                echo "<td>" . $date. "</td>";
-                                echo "<td>" . $time. "</td>";
-                            echo "</tr>";
-                            echo "<tr>";
-                                echo "<td colspan='2'>" ."Description of incident: ". "</td>";
-                            echo "</tr>";
-                            echo "<tr>";
-                                echo "<td colspan='2'>" . $description . "</td>";
-                            echo "</tr>";
-                            echo "<tr>";
-                                echo "<td>" . "Were there any witnesses? ". "</td>";
-                                echo "<td>" . $witness. "</td>";
-                            echo "</tr>"; 
-                            echo "<tr>";
-                                echo "<td>" . "Was the individual injured? ". "</td>";
-                                echo "<td>" . $treatment. "</td>";
-                            echo "</tr>";
-                            echo "<tr>";
-                            echo "<td>" . "Was medical treatment provided?". "</td>";
-                                echo "<td>" . $injury . "</td>";
-                            echo "</tr>";
-                            echo "<tr>";
-                                echo "<td>" . "Do you want the police to get in touch with you? ". "</td>";
-                                echo "<td>" . $police . "</td>";
-                            echo "</tr>";
+                            echo "<tr class='title'>
+                                <td colspan='2' id='inc-tit'>" ."INCIDENT ". $id. "</td>
+                            </tr>
+                            <tr class='sub-title'>
+                                <td id='inc-subtit' colspan='2'>" ."Victim's Details". "</td>
+                            </tr>
+                            <tr>
+                                <td>" . "Name: " . "</td>
+                                <td>" . $victimname . "</td>
+                            </tr>
+                            <tr>
+                                <td>" . "Address: ". "</td>
+                                <td>" . $victimaddress . "</td>
+                            </tr>
+                            <tr>
+                                <td>" . "Gender: ". "</td>
+                                <td>" . $victimsex . "</td>
+                            </tr>
+                            <tr class='sub-title'>
+                                <td id='inc-subtit' colspan='2'>" ."Reporter's Details". "</td>
+                            </tr>
+                            <tr>
+                                <td>" . "Name: ". "</td>
+                                <td>" . $reportername . "</td>
+                            </tr>
+                            <tr>
+                                <td>" . "Contact: ". "</td>
+                                <td>" . $reportercontact . "</td>
+                            </tr>
+                            <tr class='sub-title'>
+                                <td id='inc-subtit' colspan='2'>" ."Incident Details". "</td>
+                            </tr>
+                            <tr>
+                                <td>" . "Location: ". "</td>
+                                <td>" . $location. "</td>
+                            </tr>
+                            <tr>
+                                <td colspan='2'>" ."Date and time of incident: ". "</td>
+                            </tr>
+                            <tr>
+                                <td>" . $date. "</td>
+                                <td>" . $time. "</td>
+                            </tr>
+                            <tr>
+                                <td colspan='2'>" ."Description of incident: ". "</td>
+                            </tr>
+                            <tr>
+                                <td colspan='2'>" . $description . "</td>
+                            </tr>
+                            <tr>
+                                <td>" . "Were there any witnesses? ". "</td>
+                                <td>" . $witness. "</td>
+                            </tr>
+                            <tr>
+                                <td>" . "Was the individual injured? ". "</td>
+                                <td>" . $treatment. "</td>
+                            </tr>
+                            <tr>
+                            <td>" . "Was medical treatment provided?". "</td>
+                                <td>" . $injury . "</td>
+                            </tr>
+                            <tr>
+                                <td>" . "Do you want the police to get in touch with you? ". "</td>
+                                <td>" . $police . "</td>
+                            </tr>";
 
                         }
                     echo "</table>";
