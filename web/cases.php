@@ -8,7 +8,6 @@
     }
 
     $records_per_page = 2;
-    // $page = '';
 
     if (isset($_GET['page'])){
         $page = $_GET['page'];
@@ -30,7 +29,6 @@
     <div class="cases-display">
         
         <?php
-
             if ($result = $conn->query($sql)) {
 
                 if( mysqli_num_rows( $result )==0 ){
@@ -139,9 +137,9 @@
                             echo '<a href="cases.php?page=' . ($page-1) . '"><button class="buttons">Prev</button></a>';
                         }
                         
-                        // for ($page=1; $page <= $total_pages; $page++) { 
-                        //     echo '<a href="cases.php?page=' . $page . '"><button class="page_no">' . $page . '</button></a> ';
-                        // }
+                        for ($p=1; $p <= $total_pages; $p++) { 
+                            echo '<a href="cases.php?page=' . $p . '"><button class="page_no">' . $p . '</button></a> ';
+                        }
                         
                         if ($page >= $total_pages) {
                             $page = $total_pages;
