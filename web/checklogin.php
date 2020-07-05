@@ -1,5 +1,6 @@
-<?php include "../connection.php"; ?>
-<?php
+<?php 
+    include "../connection.php";
+
     session_start();
     $username = $_POST['username'];
     $password = $_POST['password'];
