@@ -147,6 +147,14 @@
                             echo '<a href="cases.php?page=' . ($page+1) . '"><button class="buttons">Next</button></a>';
                         }
                         echo '<a href="cases.php?page=' . $total_pages . '"><button class="last">Last</button></a>';
+                        echo '<div class="goto-page">
+                            <form action="" method="GET" onsubmit="return pageValidation()">
+                                <input type="submit" class="goto-button" value="Go to">
+                                <input type="text" class="enter-page-no" name="page" min="1"
+                                    id="page-no">
+                                <input type="hidden" id="total-pages" value="<?php echo $total_pages;?>">
+                            </form>
+			            </div>';
                         $conn->close();
                     echo '</div>';
                 }
@@ -155,4 +163,17 @@
         ?>
     </div>
 </div>
+<script>
+function pageValidation()
+    {
+        var valid=true;
+        var pageNo = $('#page-no').val();
+        var totalPage = $('#total-pages').val();
+        if(pageNo == ""|| pageNo < 1 || !pageNo.match(/\d+/) || pageNo > parseInt(totalPage)){
+            $("#page-no").css("border-color","#ee0000").show();
+            valid=false;
+        }
+        return valid;
+    }
+</script>
 <?php include "templates/footer.php"; ?>
