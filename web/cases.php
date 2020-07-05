@@ -132,21 +132,23 @@
                    
                     // pagination links
                     echo '<div class="page_links">';
-                        if ($page < 1) { 
+                        echo '<a href="cases.php?page=1"><button class="buttons">First</button></a>';
+                        if ($page <= 1) { 
                             $page = 1;
                         } else {
-                            echo '<a href="cases.php?page=' . ($page-1) . '"><button class="prev-button">Prev</button></a>';
+                            echo '<a href="cases.php?page=' . ($page-1) . '"><button class="buttons">Prev</button></a>';
                         }
                         
                         // for ($page=1; $page <= $total_pages; $page++) { 
                         //     echo '<a href="cases.php?page=' . $page . '"><button class="page_no">' . $page . '</button></a> ';
                         // }
                         
-                        if ($page > $total_pages) {
+                        if ($page >= $total_pages) {
                             $page = $total_pages;
                         } else {
-                            echo '<a href="cases.php?page=' . ($page+1) . '"><button class="next-button">Next</button></a>';
+                            echo '<a href="cases.php?page=' . ($page+1) . '"><button class="buttons">Next</button></a>';
                         }
+                        echo '<a href="cases.php?page=' . $total_pages . '"><button class="last">Last</button></a>';
                         $conn->close();
                     echo '</div>';
                 }
