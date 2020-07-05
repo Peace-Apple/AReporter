@@ -1,6 +1,6 @@
-<?php include "templates/header.php"; ?>
+<?php 
+    include "templates/header.php"; 
 
-<?php
    if($_SESSION['user']){ // checks if the user is logged in  
     $user = $_SESSION['user']; //assigns user value
    }
