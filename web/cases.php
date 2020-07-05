@@ -134,7 +134,7 @@
                         if ($page <= 1) { 
                             $page = 1;
                         } else {
-                            echo '<a href="cases.php?page=' . ($page-1) . '"><button class="buttons">Prev</button></a>';
+                            echo '<a href="cases.php?page=' . ($page-1) . '"><button class="buttons">< Prev</button></a>';
                         }
                         
                         for ($p=1; $p <= $total_pages; $p++) { 
@@ -144,15 +144,14 @@
                         if ($page >= $total_pages) {
                             $page = $total_pages;
                         } else {
-                            echo '<a href="cases.php?page=' . ($page+1) . '"><button class="buttons">Next</button></a>';
+                            echo '<a href="cases.php?page=' . ($page+1) . '"><button class="buttons">Next ></button></a>';
                         }
                         echo '<a href="cases.php?page=' . $total_pages . '"><button class="last">Last</button></a>';
                         echo '<div class="goto-page">
                             <form action="" method="GET" onsubmit="return pageValidation()">
                                 <input type="submit" class="buttons" value="Go to">
-                                <input type="text" class="enter-page-no" name="page" min="1"
-                                    id="page-no">
-                                <input type="hidden" id="total-pages" value="<?php echo $total_pages;?>">
+                                <input type="text" class="enter-page-no" name="page" min="1" id="page-no">
+                                <input type="hidden" id="total-page" value="'. $total_pages .'">
                             </form>
 			            </div>';
                         $conn->close();
@@ -164,13 +163,14 @@
     </div>
 </div>
 <script>
-function pageValidation()
-    {
+    function pageValidation(){
         var valid=true;
         var pageNo = $('#page-no').val();
-        var totalPage = $('#total-pages').val();
+        var totalPage = $('#total-page').val();
+        var errorMsg = 'Something went wrong! Ensure that the page number you have entered is correct'
         if(pageNo == ""|| pageNo < 1 || !pageNo.match(/\d+/) || pageNo > parseInt(totalPage)){
             $("#page-no").css("border-color","#ee0000").show();
+            alert(errorMsg);
             valid=false;
         }
         return valid;
