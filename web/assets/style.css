@@ -3,7 +3,7 @@ html, body {
   height: 100%;
 }
 .mainbody {
-  background: url('images/mag.jpeg');
+  /* background: url('images/mag.jpeg'); */
   background-size: cover;
   margin-top: 80px;
   font-family: sans-serif;

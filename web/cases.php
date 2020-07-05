@@ -8,7 +8,7 @@
     }
 
     $records_per_page = 2;
-    $page = '';
+    // $page = '';
 
     if (isset($_GET['page'])){
         $page = $_GET['page'];
@@ -16,9 +16,13 @@
         $page = 1;
     }
 
-    $start_from = ($page - 1) * $records_per_page;
+    $offset = ($page - 1) * $records_per_page;
+    $total_pages_sql = "SELECT COUNT(*) FROM `incidents`";
+    $result_c = $conn->query($total_pages_sql);
+    $total_rows = mysqli_fetch_array($result_c)[0];
+    $total_pages = ceil($total_rows/$records_per_page);
 
-    $sql = "SELECT * FROM `incidents` order by id DESC LIMIT $start_from, $records_per_page";
+    $sql = "SELECT * FROM `incidents` order by id DESC LIMIT $offset, $records_per_page"; 
 ?>
 
 <div class="cases">
@@ -128,27 +132,19 @@
                    
                     // pagination links
                     echo '<div class="page_links">';
-                        $page_query = "SELECT * FROM `incidents` order by id";
-                        $page_result = $conn->query($page_query);
-                        $total_records = mysqli_num_rows($page_result);
-                        $total_pages = ceil($total_records/$records_per_page);
-
-                        if ($page < 1) {
+                        if ($page < 1) { 
                             $page = 1;
-                        }
-                        if ($page > $total_pages) {
-                            $page = $total_pages;
-                        }
-
-                        if ($page > 1 && $page != 1) { 
+                        } else {
                             echo '<a href="cases.php?page=' . ($page-1) . '"><button class="prev-button">Prev</button></a>';
                         }
                         
-                        for ($page=1; $page <= $total_pages; $page++) { 
-                            echo '<a href="cases.php?page=' . $page . '"><button class="page_no">' . $page . '</button></a> ';
-                        }
+                        // for ($page=1; $page <= $total_pages; $page++) { 
+                        //     echo '<a href="cases.php?page=' . $page . '"><button class="page_no">' . $page . '</button></a> ';
+                        // }
                         
-                        if ($page) {
+                        if ($page > $total_pages) {
+                            $page = $total_pages;
+                        } else {
                             echo '<a href="cases.php?page=' . ($page+1) . '"><button class="next-button">Next</button></a>';
                         }
                         $conn->close();
