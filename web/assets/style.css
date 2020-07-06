@@ -449,10 +449,14 @@ background-color: lightgray;
   width: 30px;
   height: 30px;
   font-weight: bold;
-  background-color: blueviolet;
+  background-color: wheat;
   border: 1px solid maroon;
-  color: white;
+  color: black;
   font-size: 15px;
+  /* margin: 10px; */
+}
+#last {
+  margin-right: 15px;
 }
 .page_links .buttons {
   font-weight: bold;
@@ -463,16 +467,8 @@ background-color: lightgray;
   margin-right: 5px;
   height: 30px;
 }
-.page_links .last {
-  font-weight: bold;
-  background-color: blueviolet;
-  border: 1px solid maroon;
-  color: white;
-  font-size: 15px;
-  height: 30px;
-}
 .page_links button:hover, input[type='submit']:hover {
-  background-color: wheat;
+  background-color: lightgray;
   color: black;
 }
 .page_links button{
@@ -497,4 +493,22 @@ background-color: lightgray;
   width: 30px;
   padding: 5px 6px;
   outline-color: blueviolet;
+}
+.active {
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  background-color: blueviolet;
+  border: 1px solid maroon;
+  color: white;
+  font-size: 15px;
+}
+.next_prev {
+  text-decoration: none;
+  font-weight: bold;
+  color: maroon;
+  margin-right: 15px;
+}
+.next_prev:hover {
+  color: black;
 }
