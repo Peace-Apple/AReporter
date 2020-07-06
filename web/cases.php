@@ -137,29 +137,30 @@
                             echo '<a href="cases.php?page=' . ($page-1) . '" class="next_prev">< Previous</a>';
                         }
 
-                        
-                        // for ($p=1; $p <= $total_pages; $p++) { 
-                        //     echo '<a href="cases.php?page=' . $p . '"><button class="page_no">' . $p . '</button></a> ';
-                        // }
-
                         for ($i = ($page - 1); $i <= ($page + 1); $i ++) {
                             if ($i < 1)
                                 continue;
-                            if ($i > $total_pages)
+                            if ($i > ($total_pages - 1))
                                 break;
                             if ($i == $page) {
                                 $class = "active";
                             } else {
                                 $class = "page_no";
                             }
-                            echo '<a href="cases.php?page='.$i.'"><button class='.$class.'>'.$i.'</button> </a>';
+                            echo '<a href="cases.php?page='. $i .'"><button class='. $class .'>'. $i .'</button> </a>';
                         }
                         
-                        // if (($total_pages - ($page + 1)) >= 1) {
-                        //     echo '<div>...</div>';
-                        // }
+                        if (($total_pages - ($page + 1)) >= 1) {
+                            echo '<div  class="page-before-after">...</div>';
+                        }
+                        
+                        if ($page == $total_pages) {
+                            $class = "active";
+                        } else {
+                            $class = "page_no";
+                        }
 
-                        echo '<a href="cases.php?page=' . $total_pages . '"><button class="page_no" id="last">'.$total_pages.'</button></a>';
+                        echo '<a href="cases.php?page=' . $total_pages . '"><button class='. $class .' id="last">'.$total_pages.'</button></a>';
 
                         if ($page >= $total_pages) {
                             $page = $total_pages;
