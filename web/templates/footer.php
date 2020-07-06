@@ -8,7 +8,6 @@
                     <li><a>0800-800 800</a></li>
                     <li><a>Facebook</a></li>
                     <li><a>Twitter</a></li>
-
                 </ul>
             </div>
             <div class="flex-child-ft item2">
