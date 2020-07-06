@@ -453,7 +453,6 @@ background-color: lightgray;
   border: 1px solid maroon;
   color: black;
   font-size: 15px;
-  /* margin: 10px; */
 }
 #last {
   margin-right: 15px;
@@ -511,4 +510,10 @@ background-color: lightgray;
 }
 .next_prev:hover {
   color: black;
+}
+.page-before-after {
+  font-weight: bold;
+  color: maroon;
+  display: inline-flex;
+  margin-right: 5px;
 }
