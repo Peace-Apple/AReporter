@@ -131,23 +131,41 @@
                    
                     // pagination links
                     echo '<div class="page_links">';
-                        echo '<a href="cases.php?page=1"><button class="buttons">First</button></a>';
                         if ($page <= 1) { 
                             $page = 1;
                         } else {
-                            echo '<a href="cases.php?page=' . ($page-1) . '"><button class="buttons">< Prev</button></a>';
+                            echo '<a href="cases.php?page=' . ($page-1) . '" class="next_prev">< Previous</a>';
+                        }
+
+                        
+                        // for ($p=1; $p <= $total_pages; $p++) { 
+                        //     echo '<a href="cases.php?page=' . $p . '"><button class="page_no">' . $p . '</button></a> ';
+                        // }
+
+                        for ($i = ($page - 1); $i <= ($page + 1); $i ++) {
+                            if ($i < 1)
+                                continue;
+                            if ($i > $total_pages)
+                                break;
+                            if ($i == $page) {
+                                $class = "active";
+                            } else {
+                                $class = "page_no";
+                            }
+                            echo '<a href="cases.php?page='.$i.'"><button class='.$class.'>'.$i.'</button> </a>';
                         }
                         
-                        for ($p=1; $p <= $total_pages; $p++) { 
-                            echo '<a href="cases.php?page=' . $p . '"><button class="page_no">' . $p . '</button></a> ';
-                        }
-                        
+                        // if (($total_pages - ($page + 1)) >= 1) {
+                        //     echo '<div>...</div>';
+                        // }
+
+                        echo '<a href="cases.php?page=' . $total_pages . '"><button class="page_no" id="last">'.$total_pages.'</button></a>';
+
                         if ($page >= $total_pages) {
                             $page = $total_pages;
                         } else {
-                            echo '<a href="cases.php?page=' . ($page+1) . '"><button class="buttons">Next ></button></a>';
+                            echo '<a href="cases.php?page=' . ($page+1) . '" class="next_prev">Next ></a>';
                         }
-                        echo '<a href="cases.php?page=' . $total_pages . '"><button class="last">Last</button></a>';
                         echo '<div class="goto-page">
                             <form action="" method="GET" onsubmit="return pageValidation()">
                                 <input type="submit" class="buttons" value="Go to">
