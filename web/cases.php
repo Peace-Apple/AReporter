@@ -123,7 +123,6 @@
                                 <td>" . "Do you want the police to get in touch with you? ". "</td>
                                 <td>" . $police . "</td>
                             </tr>";
-
                         }
                     echo "</table>";
                     /*freeresultset*/
